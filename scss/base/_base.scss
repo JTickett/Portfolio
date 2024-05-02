@@ -1,0 +1,22 @@
+// ==========================================================================
+//  Base (To do with global elements and reuseable bits)
+// ==========================================================================
+
+//  Wrapped for the whole page.
+//  Probably just useful for splitting off the nav and main sections
+#page-wrapper {
+
+    height: 100vh;
+
+    background-color: green;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-auto-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "sidenav banner"
+    "sidenav main"
+    "sidenav footer";
+
+
+}

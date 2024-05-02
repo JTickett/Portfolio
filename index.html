@@ -13,53 +13,122 @@
 </head>
 <body>
     <div id="page-wrapper">
-        <nav>
-            <div id="logo-wrapper">
-                <a href="#">
-                    <img id="initials" src="images\initials.jpg" alt="James Tickett">
-                </a>
-            </div>
-            <div id="burger">
-                Buhgah!
-            </div>
-            <div id="menu">
-                <ul>
-                    <li>About Me</li>
-                    <li>My Portfolio (scroll)</li>
-                    <li>Coding Examples</li>
-                    <li>SCS Scheme</li>
-                    <li>Contact Me (scroll)</li>
-                </ul>
-            </div>
-            <div>
-                <a href="#">
-                    <div class="socials-icon" id="socials-li">
-                        <span class="icon-linkedin"></span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="socials-icon" id="socials-gh">
-                        <span class="icon-github"></span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="socials-icon" id="socials-li">
-                        <span class="icon-linkedin"></span>
-                    </div>
-                </a>
+
+        <!-- Sidebar Menu -->
+        <nav id="sidenav">
+            <div id="sidenav-wrapper">
+                <div id="initials">
+                    <a href="#">
+                        JT
+                    </a>
+                </div>
+
+                <div id="menu">
+                    <ul>
+                        <li>About Me</li>
+                        <li>My Portfolio (scroll)</li>
+                        <li>Coding Examples</li>
+                        <li>SCS Scheme</li>
+                        <li>Contact Me (scroll)</li>
+                    </ul>
+                </div>
+
+                <div id="socials">
+                    <a href="#">
+                        <div class="socials-icon" id="socials-li">
+                            <span class="icon-linkedin">LI</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="socials-icon" id="socials-gh">
+                            GH<span class="icon-github"></span>
+                        </div>
+                    </a>
+
+                </div>
             </div>
         </nav>
-        <main>
-            <section id="banner">
 
-            </section>
+        <!-- Mobile Menu (with Burger) -->
+        <nav style="display:none">
+            <div id="mobile-nav-wrapper">
+                <div id="logo-wrapper">
+                    <a href="#">
+                        <img id="initials" src="images\initials.jpg" alt="James Tickett">
+                    </a>
+                </div>
+
+                <div id="burger">
+                    Buhgah!
+                </div>
+            </div>
+        </nav>
+
+        <header id="banner">            
+            <!-- <img src="img\banner1.jpg" alt="Banner Image" id="banner-image"> -->
+            <h1>
+                My Name is
+                <br>
+                [insert actual name]
+            </h1>
+        </header>
+
+        <main id="main">
+
             <section id="projects">
+                <div id="projects-wrapper">
 
+                </div>
             </section>
-            <section id="contact">
 
+            <section id="contact">
+                <div id="contact-wrapper">
+                    <form action="">
+
+                        <div>
+                            <h2>Contact Form</h2>
+                        </div>
+
+                        <div>
+                            <label id="contact-firstname-label" class="" for="contact-firstname">First Name</label><br>
+                            <input id="contact-firstname" class="" type="text">
+                        </div>
+
+                        <div>
+                            <label id="contact-lastname-label" class="" for="contact-lastname">Last Name</label><br>
+                            <input id="contact-lastname" class="" type="text">
+                        </div>
+
+                        <div>
+                            <label id="contact-email-label" class="" for="contact-email">Email</label><br>
+                            <input id="contact-email" class="" type="text">
+                        </div>
+
+                        <div>
+                            <label id="contact-phone-label" class="" for="contact-phone">Phone</label><br>
+                            <input id="contact-phone" class="" type="text">
+                        </div>
+
+                        <div>
+                            <label id="contact-subject-label" class="" for="contact-subject">Subject</label><br>
+                            <input id="contact-subject" class="" type="text">
+                        </div>
+
+                        <div>
+                            <label id="contact-message-label" class="" for="contact-message">Message</label><br>
+                            <input id="contact-message" class="" type="text">
+                        </div>
+
+
+
+                    </form>
+                </div>
             </section>
         </main>
+
+        <footer id="footer">
+            Back to Top
+        </footer>
     </div>
 </body>
 </html>

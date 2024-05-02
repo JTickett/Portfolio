@@ -1,11 +1,9 @@
 // ==========================================================================
-// Modules
+//  Footer (Basically nothing here except "Scroll back up")
 // ==========================================================================
 
+#footer {
 
-@import 'nav';
-@import 'banner';
-@import 'main';
-@import 'portfolio';
-@import 'contact';
-@import 'footer';
+    grid-area: footer;
+
+}

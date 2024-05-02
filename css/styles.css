@@ -45,4 +45,68 @@ input {
   border-radius: 0;
 }
 
+#page-wrapper {
+  height: 100vh;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-auto-rows: auto auto auto auto auto;
+  grid-template-areas: "sidenav banner" "sidenav main" "sidenav footer";
+}
+
+#sidenav {
+  grid-area: sidenav;
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+}
+#sidenav-wrapper {
+  background-color: yellow;
+}
+#sidenav #initials {
+  background-color: orange;
+  font-weight: 900;
+  color: white;
+  font-size: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+#sidenav #initials a {
+  text-decoration: none;
+  color: white;
+  line-height: 100%;
+}
+#sidenav #menu {
+  background-color: cyan;
+}
+#sidenav #socials {
+  background-color: purple;
+}
+
+#banner {
+  grid-area: banner;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/banner1.jpg);
+}
+#banner h1 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+}
+
 /*# sourceMappingURL=styles.css.map */

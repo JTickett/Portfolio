@@ -1,11 +1,9 @@
 // ==========================================================================
-// Modules
+//  Main (Bulk of the page, excluding the Nav Banner)
 // ==========================================================================
 
 
-@import 'nav';
-@import 'banner';
-@import 'main';
-@import 'portfolio';
-@import 'contact';
-@import 'footer';
+#main {
+
+    grid-area: main;
+}
