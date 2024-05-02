@@ -1,0 +1,48 @@
+// ==========================================================================
+//  Contact Form
+// ==========================================================================
+
+
+
+#contact-section {
+
+    background-color: yellowgreen;
+
+}
+
+#contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    header {
+
+
+        h2 {
+            
+        }
+    }
+}
+
+#contact-form {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+
+    width: auto;
+}
+
+#contact-form input, #contact-form textarea {
+    background-color: #9dbc98;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 25px;
+    box-shadow: none;
+}
+
+#contact-subject , #contact-message {
+    grid-column: span 2;
+}

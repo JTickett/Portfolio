@@ -50,7 +50,7 @@ input {
   background-color: green;
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-auto-rows: auto auto auto auto auto;
+  grid-auto-rows: 600px auto auto auto auto;
   grid-template-areas: "sidenav banner" "sidenav main" "sidenav footer";
 }
 
@@ -58,7 +58,7 @@ input {
   grid-area: sidenav;
   background-color: red;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 #sidenav-wrapper {
   background-color: yellow;
@@ -83,17 +83,17 @@ input {
   background-color: purple;
 }
 
-#banner {
+#banner-section {
   grid-area: banner;
-  padding-left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
+  background-size: 2000px;
+  background-position: center 70%;
   background-image: url(../img/banner1.jpg);
 }
-#banner h1 {
+
+#banner-text {
   text-align: center;
   color: white;
   font-weight: 900;
@@ -103,6 +103,41 @@ input {
 
 #main {
   grid-area: main;
+}
+
+#portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#contact-section {
+  background-color: yellowgreen;
+}
+
+#contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
+  width: auto;
+}
+
+#contact-form input, #contact-form textarea {
+  background-color: #9dbc98;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 15px 25px;
+  box-shadow: none;
+}
+
+#contact-subject, #contact-message {
+  grid-column: span 2;
 }
 
 #footer {
