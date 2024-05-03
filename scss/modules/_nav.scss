@@ -5,39 +5,84 @@
 
 #sidenav {
 
-    grid-area: sidenav;
-    background-color: red;
+    position: fixed;
+    left: 0px;
+    top: 0px;
 
-    width: 100%;
+    grid-area: sidenav;
+    background-color: $blue-tint-trans;
+
+    width: 250px;
     height: 100%;
 
+    
+    backdrop-filter: blur(5px);
+
     &-wrapper {
-        background-color: yellow;
+        //background-color: rgba(255,255,255,0.2);
+        
     }
 
     #initials {
-        background-color: orange;
         font-weight: 900;
-        color: white;
         font-size: 200px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: $font-gill;
         text-align: center;
 
         a {
             text-decoration: none;
-            color: white;
+            color: rgba($txt-light,1);
             line-height: 100%;
         }
     }
 
-    #menu {
-        background-color: cyan;
+    &-menu {
+
+        //background-color: cyan;
+
+        ul {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+            li {
+                color: blue;
+                
+                :hover {
+                    background-color: rgba(255,255,255,0.1);
+                    //color: green;
+                }
+            
+                //width: 100%;
+                text-align: center;
+                
+                padding-top: 20px;
+                padding-bottom: 20px;
+    
+                a {
+                    //background-color: yellow;
+                    color: white;
+
+                    font-size: 30px;
+                    font-weight: 200;
+                    font-family: $font-gill;
+
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding: 10px;
+    
+                    text-decoration: none;
+                }
+            }
+        }
     }
 
     #socials {
         background-color: purple;
     }
     
-
-
 }

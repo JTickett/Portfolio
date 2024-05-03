@@ -6,7 +6,7 @@
 
 #contact-section {
 
-    background-color: yellowgreen;
+    background-color: $bg-colour-dark;
 
 }
 
@@ -20,7 +20,9 @@
 
 
         h2 {
-            
+            color: $txt-light;
+            padding: 20px;
+            font-size: 50px;
         }
     }
 }
@@ -32,11 +34,12 @@
     gap: 20px 20px;
 
     width: auto;
+    padding: 20px;
 }
 
 #contact-form input, #contact-form textarea {
-    background-color: #9dbc98;
-    color: white;
+    background-color: $bg-colour;
+    color: $txt-light;
     border-radius: 3px;
     border: none;
     padding: 15px 25px;

@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="page-wrapper">
-
+        <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true"></video>
         <!-- Sidebar Menu -->
         <nav id="sidenav">
             <div id="sidenav-wrapper">
@@ -26,11 +26,11 @@
 
                 <div id="sidenav-menu">
                     <ul>
-                        <li>About Me</li>
-                        <li>My Portfolio (scroll)</li>
-                        <li>Coding Examples</li>
-                        <li>SCS Scheme</li>
-                        <li>Contact Me (scroll)</li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#portfolio-section">My Portfolio</a></li>
+                        <li><a href="#">Coding Examples</a></li>
+                        <li><a href="#">SCS Scheme</a></li>
+                        <li><a href="#contact-section">Contact Me</a></li>
                     </ul>
                 </div>
 
@@ -65,13 +65,17 @@
             </div>
         </nav>
 
-        <header id="banner-section">            
-            <!-- <img src="img\banner1.jpg" alt="Banner Image" id="banner-image"> -->
-            <h1 id="banner-text">
-                My Name is
-                <br>
-                [insert actual name]
-            </h1>
+        <header id="banner-section">
+            <div id="banner-overlay">
+                <!-- <img src="img\banner1.jpg" alt="Banner Image" id="banner-image"> -->
+                <h1 id="banner-text">
+                    My Name is
+                    <br>
+                    [insert actual name]
+                </h1>
+                <a id="banner-link" href="#main">Scroll Down</a>
+            </div>
+            <div id="banner-gradient"></div>
         </header>
 
         <main id="main">
@@ -79,39 +83,38 @@
             <section id="portfolio-section">
                 <div id="portfolio-wrapper">
 
-                    <div>
-                        Card 1
-                        <img src="" alt="Project Placeholder Image">
+                    <div class="portfolio-item">
+                        <img src="img\homepage.png" alt="Project Placeholder Image">
                         <h3>Project Title</h3>
                         <a href="">View Project</a>
                         <a href="">View Code</a>
                     </div>
-                    <div>Card 2
-                        <img src="" alt="">
+                    <div class="portfolio-item">
+                        <img src="img\homepage.png" alt="Project Placeholder Image">
                         <h3>Project Title</h3>
                         <a href="">View Project</a>
                         <a href="">View Code</a>
                     </div>
-                    <div>Card 3
-                        <img src="" alt="">
+                    <div class="portfolio-item">
+                        <img src="img\homepage.png" alt="Project Placeholder Image">
                         <h3>Project Title</h3>
                         <a href="">View Project</a>
                         <a href="">View Code</a>
                     </div>
-                    <div>Card 4
-                        <img src="" alt="">
+                    <div class="portfolio-item">
+                        <img src="img\homepage.png" alt="Project Placeholder Image">
                         <h3>Project Title</h3>
                         <a href="">View Project</a>
                         <a href="">View Code</a>
                     </div>
-                    <div>Card 5
-                        <img src="" alt="">
+                    <div class="portfolio-item">
+                        <img src="img\homepage.png" alt="Project Placeholder Image">
                         <h3>Project Title</h3>
                         <a href="">View Project</a>
                         <a href="">View Code</a>
                     </div>
-                    <div>Card 6
-                        <img src="" alt="">
+                    <div class="portfolio-item">
+                        <img src="img\homepage.png" alt="Project Placeholder Image">
                         <h3>Project Title</h3>
                         <a href="">View Project</a>
                         <a href="">View Code</a>

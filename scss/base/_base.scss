@@ -8,15 +8,58 @@
 
     height: 100vh;
 
-    background-color: green;
+    // background-color: green;
+
+    background-size: 2000px;
+
+    background-position: center 70%;
+    //background-image: url(../img/banner1.jpg);
+    //background: linear-gradient(#F26101, #08AEEA), rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    position: relative;
+
+
+
 
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-auto-rows: 600px auto auto auto auto;
+    grid-template-columns: 250px 1fr;
+    grid-auto-rows: 100vh auto auto auto auto;
     grid-template-areas:
     "sidenav banner"
     "sidenav main"
     "sidenav footer";
 
+}
 
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: $font-gill;
+    // background-size: 2000px;
+
+    // background-position: center 70%;
+    // background-image: url(../img/banner1.jpg);
+    // //background: linear-gradient(#F26101, #08AEEA), rgba(0, 0, 0, 0.5);
+    // background-attachment: fixed;
+    // position: relative;
+}
+
+#background-video {
+
+    $vid-w: 2560px;
+    $vid-h: 1440px;
+
+    width: $vid-w;
+    height: $vid-h;
+    //width: calc($vid-w/2);
+    //height: calc($vid-h/2);
+
+    //width: 100vw;
+    //height: 100vh;
+    position: fixed;
+    z-index: -999;
+    
 }

@@ -1,0 +1,24 @@
+
+// https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41
+
+$green-darkest      : #344E41;
+$green-dark         : #3A5A40;
+$green-mid          : #588157;
+$green-light        : #A3B18A;
+$green-lightest     : #DAD7CD;
+
+
+$bg-colour-dark     : rgba($green-darkest, 0.9);
+$bg-colour          : $green-dark;
+
+
+$blue-tint-trans    : rgba(12, 0, 104, 0.1);
+$green-tint-trans   : rgba($bg-colour-dark, 0.1);
+
+$txt-light          : white;
+$txt-lightish       : $green-lightest;
+$txt-green          : $green-light;
+
+
+
+$font-gill              : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
