@@ -7,14 +7,8 @@
 #page-wrapper {
 
     height: 100vh;
-
-    // background-color: green;
-
-    background-size: 2000px;
-
-    background-position: center 70%;
-    //background-image: url(../img/banner1.jpg);
-    //background: linear-gradient(#F26101, #08AEEA), rgba(0, 0, 0, 0.5);
+    //background-size: 2000px;
+    //background-position: center 70%;
     background-attachment: fixed;
     position: relative;
 
@@ -36,15 +30,7 @@
 }
 
 body {
-
     font-family: $font-gill;
-    // background-size: 2000px;
-
-    // background-position: center 70%;
-    // background-image: url(../img/banner1.jpg);
-    // //background: linear-gradient(#F26101, #08AEEA), rgba(0, 0, 0, 0.5);
-    // background-attachment: fixed;
-    // position: relative;
 }
 
 #background-video {
@@ -60,6 +46,12 @@ body {
     //width: 100vw;
     //height: 100vh;
     position: fixed;
-    z-index: -999;
+    z-index: -1;
+    object-fit: cover;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     
 }

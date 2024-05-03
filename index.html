@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="page-wrapper">
-        <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true"></video>
+        <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.png"></video>
         <!-- Sidebar Menu -->
         <nav id="sidenav">
             <div id="sidenav-wrapper">
@@ -71,7 +71,7 @@
                 <h1 id="banner-text">
                     My Name is
                     <br>
-                    [insert actual name]
+                    James Tickett
                 </h1>
                 <a id="banner-link" href="#main">Scroll Down</a>
             </div>
@@ -133,13 +133,13 @@
                     <form id="contact-form" action="">
 
                         <!-- <label id="contact-firstname-label" class="" for="contact-firstname">First Name</label><br> -->
-                        <input id="contact-firstname" class="" type="text" placeholder="First Name">
+                        <input id="contact-firstname" class="" type="text" placeholder="First Name" name="contact-first-name">
 
                         <!-- <label id="contact-lastname-label" class="" for="contact-lastname">Last Name</label><br> -->
-                        <input id="contact-lastname" class="" type="text" placeholder="Last Name">
+                        <input id="contact-lastname" class="" type="text" placeholder="Last Name" name="contact-firstname" autocomplete="contact-first-name">
 
                         <!-- <label id="contact-email-label" class="" for="contact-email">Email</label><br> -->
-                        <input id="contact-email" class="" type="text" placeholder="Email Address">
+                        <input id="contact-email" class="" type="text" placeholder="Email Address" name="contact-email" autocomplete="contact-email">
 
                         <!-- <label id="contact-phone-label" class="" for="contact-phone">Phone</label><br> -->
                         <input id="contact-phone" class="" type="text" placeholder="Phone Number">
@@ -158,7 +158,8 @@
         </main>
 
         <footer id="footer">
-            Back to Top
+            <a id="footer-link" href="#banner-section">Back to Top</a>
+            
         </footer>
     </div>
 </body>

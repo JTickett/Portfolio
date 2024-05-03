@@ -4,55 +4,30 @@
 
 
 #banner-section {
-
     grid-area: banner;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    // background-size: 2000px;
-
-    // background-position: center 70%;
-    // background-image: url(../img/banner1.jpg);
-    // //background: linear-gradient(#F26101, #08AEEA), rgba(0, 0, 0, 0.5);
-    // background-attachment: fixed;
-    // position: relative;
 }
 
-// #banner-overlay {
-//     width: 100%;
-//     height: 100%;
-
-//     background: linear-gradient(rgba(0, 0, 0, 0), tomato), ;
-// }
-
 #banner-text {
-
     text-align: center;
     color: $txt-light;
     font-weight: 900;
     font-family: $font-gill;
     font-size: 100px;
-
 }
 
 #banner-link {
-
     padding-top: 100px;
-
     text-align: center;
     align-self: center;
     display: block;
-
     width: auto;
-
-
     font-family: $font-gill;
     color: $txt-lightish;
     font-size: 40px;
-
     text-decoration: none;
 
     &:hover {
@@ -62,12 +37,10 @@
 }
 
 #banner-gradient {
-
     background: linear-gradient(rgba(0, 0, 0, 0), $bg-colour-dark);
     position: absolute;
     bottom: 0;
     right: 0;
     width: calc(100% - 250px);
     height: 300px;
-
 }

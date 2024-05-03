@@ -5,5 +5,26 @@
 #footer {
 
     grid-area: footer;
+    background-color: $bg-colour-dark;
+    color: $txt-light
 
+}
+
+#footer-link {
+    padding-top: 100px;
+    text-align: center;
+    align-self: center;
+    display: block;
+    width: auto;
+    font-family: $font-gill;
+    color: $txt-lightish;
+    font-size: 40px;
+    text-decoration: none;
+
+    &:hover {
+        color: $txt-green;
+        text-decoration: underline;
+    }
+
+    padding-bottom: 50px;
 }

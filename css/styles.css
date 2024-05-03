@@ -47,8 +47,6 @@ input {
 
 #page-wrapper {
   height: 100vh;
-  background-size: 2000px;
-  background-position: center 70%;
   background-attachment: fixed;
   position: relative;
   display: grid;
@@ -69,7 +67,12 @@ body {
   width: 2560px;
   height: 1440px;
   position: fixed;
-  z-index: -999;
+  z-index: -1;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 #sidenav {
@@ -92,6 +95,10 @@ body {
   text-decoration: none;
   color: white;
   line-height: 100%;
+  text-shadow: 0 0 10px #c1cae2;
+}
+#sidenav #initials a:hover {
+  text-shadow: 0 0 10px #c1cae2, 0 0 10px #c1cae2;
 }
 #sidenav-menu ul {
   display: flex;
@@ -147,17 +154,17 @@ body {
   display: block;
   width: auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #DAD7CD;
+  color: #c1cae2;
   font-size: 40px;
   text-decoration: none;
 }
 #banner-link:hover {
-  color: #A3B18A;
+  color: #728380;
   text-decoration: underline;
 }
 
 #banner-gradient {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(52, 78, 65, 0.9));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(1, 5, 13, 0.9));
   position: absolute;
   bottom: 0;
   right: 0;
@@ -172,10 +179,9 @@ body {
 #portfolio-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: rgba(52, 78, 65, 0.9);
+  background-color: rgba(1, 5, 13, 0.9);
   padding-top: 100px;
   padding-bottom: 100px;
-  background-clip: content-box;
 }
 
 .portfolio-item {
@@ -198,16 +204,16 @@ body {
   font-size: 22px;
 }
 .portfolio-item a {
-  color: #DAD7CD;
+  color: #c1cae2;
   text-decoration: none;
   font-size: 14px;
 }
 .portfolio-item a:hover {
-  color: #A3B18A;
+  color: #728380;
 }
 
 #contact-section {
-  background-color: rgba(52, 78, 65, 0.9);
+  background-color: rgba(1, 5, 13, 0.9);
 }
 
 #contact-wrapper {
@@ -231,7 +237,7 @@ body {
 }
 
 #contact-form input, #contact-form textarea {
-  background-color: #3A5A40;
+  background-color: #030f26;
   color: white;
   border-radius: 3px;
   border: none;
@@ -245,6 +251,25 @@ body {
 
 #footer {
   grid-area: footer;
+  background-color: rgba(1, 5, 13, 0.9);
+  color: white;
+}
+
+#footer-link {
+  padding-top: 100px;
+  text-align: center;
+  align-self: center;
+  display: block;
+  width: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #c1cae2;
+  font-size: 40px;
+  text-decoration: none;
+  padding-bottom: 50px;
+}
+#footer-link:hover {
+  color: #728380;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
