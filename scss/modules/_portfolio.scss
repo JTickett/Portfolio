@@ -5,7 +5,14 @@
 
 #portfolio-section {
 
+    background-color: $bg-colour-dark;
 
+    //padding-top: 200px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -14,10 +21,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
-    background-color: $bg-colour-dark;
 
-    padding-top: 200px;
-    padding-bottom: 100px;
+
+
 	//background-clip: content-box;
     
 

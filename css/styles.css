@@ -411,18 +411,24 @@ body {
   right: 0;
   width: calc(100% - 250px);
   height: 300px;
+  padding-bottom: 200px;
 }
 
 #main {
   grid-area: main;
 }
 
+#portfolio-section {
+  background-color: rgba(1, 5, 13, 0.97);
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #portfolio-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: rgba(1, 5, 13, 0.97);
-  padding-top: 200px;
-  padding-bottom: 100px;
 }
 
 .portfolio-item {
