@@ -44,6 +44,13 @@
     border: none;
     padding: 15px 25px;
     box-shadow: none;
+    &::placeholder {
+        color: $txt-green;
+    }
+}
+
+#contact-submit {
+    cursor: pointer;
 }
 
 #contact-subject , #contact-message {

@@ -16,14 +16,13 @@
     align-self: center;
     display: block;
     width: auto;
-    font-family: $font-gill;
-    color: $txt-lightish;
-    font-size: 40px;
+    color: $scroll;
+    font-size: 20px;
     text-decoration: none;
+    font-weight: 100;
 
     &:hover {
-        color: $txt-green;
-        text-decoration: underline;
+        color: $scroll-hover;
     }
 
     padding-bottom: 50px;

@@ -15,8 +15,15 @@
     text-align: center;
     color: $txt-light;
     font-weight: 900;
-    font-family: $font-gill;
-    font-size: 100px;
+    font-size: 120px;
+}
+
+#banner-subtext {
+    text-align: right;
+    color: $txt-lightish;
+    font-weight: 200;
+    font-size: 50px;
+    border-top: 2px solid $txt-lightish;
 }
 
 #banner-link {
@@ -25,14 +32,13 @@
     align-self: center;
     display: block;
     width: auto;
-    font-family: $font-gill;
-    color: $txt-lightish;
-    font-size: 40px;
+    color: $scroll;
+    font-size: 20px;
     text-decoration: none;
+    font-weight: 100;
 
     &:hover {
-        color: $txt-green;
-        text-decoration: underline;
+        color: $scroll-hover;
     }
 }
 

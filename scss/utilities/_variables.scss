@@ -20,7 +20,7 @@ $water-light         : $battleship-gray;
 $water-lightest      : $french-gray;
 
 
-$bg-colour-dark     : rgba($water-darkest, 0.9);
+$bg-colour-dark     : rgba($water-darkest, 0.97);
 $bg-colour          : $water-dark;
 
 
@@ -30,6 +30,12 @@ $green-tint-trans   : rgba($bg-colour-dark, 0.1);
 $txt-light          : white;
 $txt-lightish       : $water-lightest;
 $txt-green          : $water-light;
+
+$link               : $water-light;
+$link-hover         : $water-lightest;
+
+$scroll             : white;
+$scroll-hover       : $water-lightest;
 
 
 

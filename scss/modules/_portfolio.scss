@@ -16,7 +16,7 @@
     
     background-color: $bg-colour-dark;
 
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 100px;
 	//background-clip: content-box;
     
@@ -31,31 +31,28 @@
 
     padding: 20px;
 
-    img {
+    &__image {
         height: 200px;
         width: auto;
         padding: 5px;
         border-radius: 20px;
     }
 
-    h3, a {
-        font-family: $font-gill;
-    }
-
-    h3 {
+    &__title {
         color: $txt-light;
         font-size: 22px;
+        padding-bottom: 6px;
     }
 
-    a {
-        color: $txt-lightish;
+    &__link1, &__link2 {
+        color: $link;
         text-decoration: none;
         font-size: 14px;
 
         &:hover {
-            color: $txt-green;
-            //background-color: pink;
+            color: $link-hover;
         }
     }
+
 
 }
