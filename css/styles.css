@@ -289,6 +289,12 @@ body {
   bottom: 0;
 }
 
+.section-title {
+  color: white;
+  padding: 20px;
+  font-size: 50px;
+}
+
 #sidenav {
   position: fixed;
   left: 0px;
