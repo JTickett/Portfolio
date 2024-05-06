@@ -13,6 +13,8 @@ $gunmetal           : #122835ff;
 $battleship-gray    : #728380ff;
 $french-gray        : #c1cae2ff;
 
+
+
 $water-darkest       : $rich-black;
 $water-dark          : $oxford-blue;
 $water-mid           : $gunmetal;
@@ -30,6 +32,7 @@ $green-tint-trans   : rgba($bg-colour-dark, 0.1);
 $txt-light          : white;
 $txt-lightish       : $water-lightest;
 $txt-green          : $water-light;
+//$txt-orange         : $????;
 
 $link               : $water-light;
 $link-hover         : $water-lightest;
@@ -38,9 +41,24 @@ $scroll             : white;
 $scroll-hover       : $water-lightest;
 
 
-//  I thought I was using Gill but it turns out that Calibri was the one I got used to.
-//  I need to change the larger fonts to something better
-$font-gill              : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+//  Fonts
+$font-titillium     : "Titillium Web", 'Verdana', 'Trebuchet MS', sans-serif;
+$font-calibri       : 'Calibri', sans-serif;    //  Not Web Safe! Won't work on Android!
+$font-poppins       : Poppins, 'Verdana', 'Trebuchet MS', sans-serif;
+$font-roboto        : Roboto, 'Verdana', 'Trebuchet MS', sans-serif;
+$font-verdana       : 'Verdana', sans-serif;
+$font-trebuchet     : 'Trebuchet MS', sans-serif;
+$font-tahoma        : 'Tahoma', sans-serif;
+$font-arial         : 'Arial', sans-serif;
+
+
+$font-primary       : $font-titillium;
+$font-secondary     : $font-roboto;
+
+
+
+
 
 
 

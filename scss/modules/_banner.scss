@@ -14,8 +14,9 @@
 #banner-text {
     text-align: center;
     color: $txt-light;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 40px;
+    font-family: $font-secondary;
 
     
     @include mq(small) {
@@ -38,6 +39,7 @@
     font-weight: 200;
     font-size: 16px;
     border-top: 2px solid $txt-lightish;
+    font-family: $font-primary;
 
         
     @include mq(small) {

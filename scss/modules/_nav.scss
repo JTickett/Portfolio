@@ -34,9 +34,9 @@
 
     #initials {
 
-        font-weight: 900;
+        font-weight: 600;
         font-size: 120px;
-        font-family: $font-gill;
+        font-family: $font-secondary;
         text-align: center;
 
         
@@ -68,8 +68,6 @@
 
     &-menu {
 
-        //background-color: cyan;
-
         ul {
 
             display: flex;
@@ -95,7 +93,7 @@
                     color: $link;
                     font-size: 18px;
                     font-weight: 400;
-                    font-family: $font-gill;
+                    font-family: $font-primary;
                     padding: 10px 15px;
                     text-decoration: none;
                     

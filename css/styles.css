@@ -306,7 +306,7 @@ input {
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Titillium Web", "Verdana", "Trebuchet MS", sans-serif;
 }
 
 .section-title {
@@ -346,9 +346,9 @@ body {
   }
 }
 #sidenav #initials {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 120px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
   text-align: center;
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -404,7 +404,7 @@ body {
   color: #728380;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Titillium Web", "Verdana", "Trebuchet MS", sans-serif;
   padding: 10px 15px;
   text-decoration: none;
 }
@@ -477,8 +477,9 @@ body {
 #banner-text {
   text-align: center;
   color: white;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 40px;
+  font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-text {
@@ -507,6 +508,7 @@ body {
   font-weight: 200;
   font-size: 16px;
   border-top: 2px solid #c1cae2;
+  font-family: "Titillium Web", "Verdana", "Trebuchet MS", sans-serif;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-subtext {
