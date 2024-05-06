@@ -505,12 +505,12 @@ body {
   text-align: right;
   color: #c1cae2;
   font-weight: 200;
-  font-size: 10px;
+  font-size: 16px;
   border-top: 2px solid #c1cae2;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-subtext {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (min-width: 768px) {
@@ -530,7 +530,7 @@ body {
 }
 
 #banner-link {
-  padding-top: 100px;
+  margin-top: 300px;
   text-align: center;
   align-self: center;
   display: block;
@@ -545,7 +545,7 @@ body {
 }
 
 #banner-gradient {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(1, 5, 13, 0.97) 80%);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(1, 5, 13, 0.9) 80%);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -578,7 +578,7 @@ body {
 }
 
 #portfolio-section {
-  background-color: rgba(1, 5, 13, 0.97);
+  background-color: rgba(1, 5, 13, 0.9);
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -617,7 +617,7 @@ body {
   padding: 20px;
 }
 .portfolio-item__image {
-  height: 200px;
+  height: 190px;
   width: auto;
   padding: 5px;
   border-radius: 20px;
@@ -637,7 +637,7 @@ body {
 }
 
 #contact-section {
-  background-color: rgba(1, 5, 13, 0.97);
+  background-color: rgba(1, 5, 13, 0.9);
 }
 
 #contact-wrapper {
@@ -735,7 +735,7 @@ body {
 
 #footer {
   grid-area: footer;
-  background-color: rgba(1, 5, 13, 0.97);
+  background-color: rgba(1, 5, 13, 0.9);
   color: white;
 }
 
