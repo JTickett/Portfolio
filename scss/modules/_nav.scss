@@ -10,9 +10,22 @@
     top: 0px;
     grid-area: sidenav;
     background-color: $blue-tint-trans;
-    width: 250px;
+    width: 160px;
     height: 100%;
     backdrop-filter: blur(5px);
+
+    @include mq(small) {
+        width: 180px;
+    }
+    @include mq(medium) {
+        width: 200px;
+    }
+    @include mq(large) {
+        width: 200px;
+    }
+    @include mq(x-large) {
+        width: 250px;
+    }
 
     &-wrapper {
         //background-color: rgba(255,255,255,0.2);
@@ -22,9 +35,23 @@
     #initials {
 
         font-weight: 900;
-        font-size: 200px;
+        font-size: 120px;
         font-family: $font-gill;
         text-align: center;
+
+        
+        @include mq(small) {
+            font-size: 140px;
+        }    
+        @include mq(medium) {
+            font-size: 160px;
+        }    
+        @include mq(large) {
+            font-size: 180px;
+        }                    
+        @include mq(x-large) {
+            font-size: 200px;
+        }
 
 
         a {
@@ -66,11 +93,25 @@
     
                 a {
                     color: $link;
-                    font-size: 28px;
+                    font-size: 18px;
                     font-weight: 400;
                     font-family: $font-gill;
                     padding: 10px 15px;
                     text-decoration: none;
+                    
+
+                    @include mq(small) {
+                        font-size: 20px;
+                    }    
+                    @include mq(medium) {
+                        font-size: 22px;
+                    }    
+                    @include mq(large) {
+                        font-size: 24px;
+                    }                    
+                    @include mq(x-large) {
+                        font-size: 28px;
+                    }
                 }
             }
         }
@@ -96,7 +137,25 @@
 .socials-icon {
     color: $link;
     text-decoration: none;
-    font-size: 50px;
+
+
+    font-size: 32px;
+
+    @include mq(small) {
+        font-size: 38px;
+    }    
+    @include mq(medium) {
+        font-size: 42px;
+    }    
+    @include mq(large) {
+        font-size: 46px;
+    }                    
+    @include mq(x-large) {
+        font-size: 40px;
+    }
+
+
+
     &:hover {
         color: $link-hover;
     }

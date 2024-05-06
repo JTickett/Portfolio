@@ -259,24 +259,6 @@ input {
   border-radius: 0;
 }
 
-#page-wrapper {
-  height: 100vh;
-  background-attachment: fixed;
-  position: relative;
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-auto-rows: 100vh auto auto auto auto;
-  grid-template-areas: "sidenav banner" "sidenav main" "sidenav footer";
-}
-
-* {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
 #background-video {
   width: 2560px;
   height: 1440px;
@@ -287,6 +269,44 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+#page-wrapper {
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-auto-rows: 100vh auto auto;
+  grid-template-areas: "sidenav banner" "sidenav main" "sidenav footer";
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #page-wrapper {
+    grid-template-columns: 180px 1fr;
+  }
+}
+@media (min-width: 768px) {
+  #page-wrapper {
+    grid-template-columns: 200px 1fr;
+  }
+}
+@media (min-width: 992px) {
+  #page-wrapper {
+    grid-template-columns: 200px 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  #page-wrapper {
+    grid-template-columns: 250px 1fr;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .section-title {
@@ -301,15 +321,55 @@ body {
   top: 0px;
   grid-area: sidenav;
   background-color: rgba(12, 0, 104, 0.1);
-  width: 250px;
+  width: 160px;
   height: 100%;
   backdrop-filter: blur(5px);
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  #sidenav {
+    width: 180px;
+  }
+}
+@media (min-width: 768px) {
+  #sidenav {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #sidenav {
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  #sidenav {
+    width: 250px;
+  }
+}
 #sidenav #initials {
   font-weight: 900;
-  font-size: 200px;
+  font-size: 120px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #sidenav #initials {
+    font-size: 140px;
+  }
+}
+@media (min-width: 768px) {
+  #sidenav #initials {
+    font-size: 160px;
+  }
+}
+@media (min-width: 992px) {
+  #sidenav #initials {
+    font-size: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  #sidenav #initials {
+    font-size: 200px;
+  }
 }
 #sidenav #initials a {
   text-decoration: none;
@@ -342,11 +402,31 @@ body {
 }
 #sidenav-menu ul li a {
   color: #728380;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 10px 15px;
   text-decoration: none;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #sidenav-menu ul li a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #sidenav-menu ul li a {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  #sidenav-menu ul li a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  #sidenav-menu ul li a {
+    font-size: 28px;
+  }
 }
 #sidenav-socials {
   display: flex;
@@ -360,7 +440,27 @@ body {
 .socials-icon {
   color: #728380;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 32px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .socials-icon {
+    font-size: 38px;
+  }
+}
+@media (min-width: 768px) {
+  .socials-icon {
+    font-size: 42px;
+  }
+}
+@media (min-width: 992px) {
+  .socials-icon {
+    font-size: 46px;
+  }
+}
+@media (min-width: 1200px) {
+  .socials-icon {
+    font-size: 40px;
+  }
 }
 .socials-icon:hover {
   color: #c1cae2;
@@ -378,15 +478,55 @@ body {
   text-align: center;
   color: white;
   font-weight: 900;
-  font-size: 120px;
+  font-size: 40px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #banner-text {
+    font-size: 60px;
+  }
+}
+@media (min-width: 768px) {
+  #banner-text {
+    font-size: 80px;
+  }
+}
+@media (min-width: 992px) {
+  #banner-text {
+    font-size: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner-text {
+    font-size: 120px;
+  }
 }
 
 #banner-subtext {
   text-align: right;
   color: #c1cae2;
   font-weight: 200;
-  font-size: 50px;
+  font-size: 10px;
   border-top: 2px solid #c1cae2;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #banner-subtext {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #banner-subtext {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #banner-subtext {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner-subtext {
+    font-size: 50px;
+  }
 }
 
 #banner-link {
@@ -405,13 +545,32 @@ body {
 }
 
 #banner-gradient {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(1, 5, 13, 0.97));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(1, 5, 13, 0.97) 80%);
   position: absolute;
   bottom: 0;
   right: 0;
-  width: calc(100% - 250px);
-  height: 300px;
-  padding-bottom: 200px;
+  width: calc(100% - 160px);
+  height: 200px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #banner-gradient {
+    width: calc(100% - 180px);
+  }
+}
+@media (min-width: 768px) {
+  #banner-gradient {
+    width: calc(100% - 200px);
+  }
+}
+@media (min-width: 992px) {
+  #banner-gradient {
+    width: calc(100% - 200px);
+  }
+}
+@media (min-width: 1200px) {
+  #banner-gradient {
+    width: calc(100% - 250px);
+  }
 }
 
 #main {
@@ -428,7 +587,27 @@ body {
 
 #portfolio-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #portfolio-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  #portfolio-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  #portfolio-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  #portfolio-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .portfolio-item {
@@ -475,10 +654,38 @@ body {
 
 #contact-form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px 20px;
-  width: auto;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px 10px;
   padding: 20px;
+  width: auto;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #contact-form {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 20px;
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 20px;
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #contact-form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #contact-form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    padding: 20px;
+  }
 }
 
 #contact-form input, #contact-form textarea {
@@ -486,8 +693,28 @@ body {
   color: white;
   border-radius: 3px;
   border: none;
-  padding: 15px 25px;
+  padding: 8px 12px;
   box-shadow: none;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #contact-form input, #contact-form textarea {
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form input, #contact-form textarea {
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 992px) {
+  #contact-form input, #contact-form textarea {
+    padding: 15px 25px;
+  }
+}
+@media (min-width: 1200px) {
+  #contact-form input, #contact-form textarea {
+    padding: 15px 25px;
+  }
 }
 #contact-form input::placeholder, #contact-form textarea::placeholder {
   color: #728380;
@@ -498,7 +725,12 @@ body {
 }
 
 #contact-subject, #contact-message {
-  grid-column: span 2;
+  grid-column: span 1;
+}
+@media (min-width: 768px) {
+  #contact-subject, #contact-message {
+    grid-column: span 2;
+  }
 }
 
 #footer {

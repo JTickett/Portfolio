@@ -2,37 +2,8 @@
 //  Base (To do with global elements and reuseable bits)
 // ==========================================================================
 
-//  Wrapped for the whole page.
-//  Probably just useful for splitting off the nav and main sections
-#page-wrapper {
 
-    height: 100vh;
-    //background-size: 2000px;
-    //background-position: center 70%;
-    background-attachment: fixed;
-    position: relative;
-
-
-
-
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-auto-rows: 100vh auto auto auto auto;
-    grid-template-areas:
-    "sidenav banner"
-    "sidenav main"
-    "sidenav footer";
-
-}
-
-* {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: $font-gill;
-}
-
+//  The video playing as the background, acting as a banner
 #background-video {
 
     $vid-w: 2560px;
@@ -55,6 +26,56 @@ body {
     bottom: 0;
     
 }
+
+
+//  Wrapped for the whole page.
+//  Probably just useful for splitting off the nav and main sections
+#page-wrapper {
+
+    height: 100vh;
+    //width: 100vw;
+    //background-size: 2000px;
+    //background-position: center 70%;
+    background-attachment: fixed;
+    position: relative;
+
+
+
+
+    display: grid;
+
+
+    grid-template-columns: 160px 1fr;
+
+    @include mq(small) {
+        grid-template-columns: 180px 1fr;
+    }    
+    @include mq(medium) {
+        grid-template-columns: 200px 1fr;
+    }    
+    @include mq(large) {
+        grid-template-columns: 200px 1fr;
+    }                    
+    @include mq(x-large) {
+        grid-template-columns: 250px 1fr;
+    }
+    
+    grid-auto-rows: 100vh auto auto;
+    grid-template-areas:
+    "sidenav banner"
+    "sidenav main"
+    "sidenav footer";
+
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-gill;
+}
+
 
 .section-title {
     color: $txt-light;
