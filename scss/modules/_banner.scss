@@ -15,12 +15,12 @@
     text-align: center;
     color: $txt-light;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     font-family: $font-secondary;
 
     
     @include mq(small) {
-        font-size: 60px;
+        font-size: 50px;
     }    
     @include mq(medium) {
         font-size: 80px;
@@ -79,11 +79,13 @@
     bottom: 0;
     right: 0;
 
-    width: calc(100% - 120px);
+    width: calc(100% - 100px);
     height: 200px;
 
+    z-index: -1;
+
     @include mq(small) {
-        width: calc(100% - 140px);
+        width: calc(100% - 120px);
     }    
     @include mq(medium) {
         width: calc(100% - 180px);

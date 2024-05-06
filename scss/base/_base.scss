@@ -11,6 +11,8 @@
 
     width: $vid-w;
     height: $vid-h;
+    width: auto;
+    height: 100vh;
     //width: calc($vid-w/2);
     //height: calc($vid-h/2);
 
@@ -45,10 +47,10 @@
     display: grid;
 
 
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 100px 1fr;
 
     @include mq(small) {
-        grid-template-columns: 140px 1fr;
+        grid-template-columns: 120px 1fr;
     }    
     @include mq(medium) {
         grid-template-columns: 180px 1fr;
@@ -80,5 +82,18 @@ body {
 .section-title {
     color: $txt-light;
     padding: 20px;
-    font-size: 50px;
+    font-size: 30px;
+
+    @include mq(small) {
+        font-size: 30px;
+    }    
+    @include mq(medium) {
+        font-size: 40px;
+    }    
+    @include mq(large) {
+        font-size: 50px;
+    }                    
+    @include mq(x-large) {
+        font-size: 50px;
+    }
 }

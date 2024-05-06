@@ -10,12 +10,12 @@
     top: 0px;
     grid-area: sidenav;
     background-color: $blue-tint-trans;
-    width: 120px;
+    width: 100px;
     height: 100%;
     backdrop-filter: blur(5px);
 
     @include mq(small) {
-        width: 140px;
+        width: 120px;
     }
     @include mq(medium) {
         width: 180px;
@@ -29,7 +29,7 @@
 
     &-wrapper {
         //margin-top: 40px;
-        padding-top: 40px;
+        padding-top: 30px;
         
     }
 

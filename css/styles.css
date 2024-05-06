@@ -262,6 +262,8 @@ input {
 #background-video {
   width: 2560px;
   height: 1440px;
+  width: auto;
+  height: 100vh;
   position: fixed;
   z-index: -1;
   object-fit: cover;
@@ -276,13 +278,13 @@ input {
   background-attachment: fixed;
   position: relative;
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 100px 1fr;
   grid-auto-rows: 100vh auto auto;
   grid-template-areas: "sidenav banner" "sidenav main" "sidenav footer";
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #page-wrapper {
-    grid-template-columns: 140px 1fr;
+    grid-template-columns: 120px 1fr;
   }
 }
 @media (min-width: 768px) {
@@ -312,7 +314,27 @@ body {
 .section-title {
   color: white;
   padding: 20px;
-  font-size: 50px;
+  font-size: 30px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 50px;
+  }
 }
 
 #sidenav {
@@ -321,13 +343,13 @@ body {
   top: 0px;
   grid-area: sidenav;
   background-color: rgba(12, 0, 104, 0.1);
-  width: 120px;
+  width: 100px;
   height: 100%;
   backdrop-filter: blur(5px);
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #sidenav {
-    width: 140px;
+    width: 120px;
   }
 }
 @media (min-width: 768px) {
@@ -346,7 +368,7 @@ body {
   }
 }
 #sidenav-wrapper {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 #sidenav #initials {
   font-weight: 600;
@@ -485,12 +507,12 @@ body {
   text-align: center;
   color: white;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 30px;
   font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-text {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -559,12 +581,13 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: calc(100% - 120px);
+  width: calc(100% - 100px);
   height: 200px;
+  z-index: -1;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-gradient {
-    width: calc(100% - 140px);
+    width: calc(100% - 120px);
   }
 }
 @media (min-width: 768px) {
@@ -627,14 +650,14 @@ body {
   padding: 20px;
 }
 .portfolio-item__image {
-  height: 190px;
-  width: auto;
+  height: auto;
+  width: 200px;
   padding: 5px;
   border-radius: 20px;
 }
 .portfolio-item__title {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   padding-bottom: 6px;
 }
 .portfolio-item__link1, .portfolio-item__link2 {
@@ -655,11 +678,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-#contact-wrapper header h2 {
-  color: white;
-  padding: 20px;
-  font-size: 50px;
 }
 
 #contact-form {

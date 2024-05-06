@@ -49,15 +49,15 @@
     padding: 20px;
 
     &__image {
-        height: 190px;
-        width: auto;
+        height: auto;
+        width: 200px;
         padding: 5px;
         border-radius: 20px;
     }
 
     &__title {
         color: $txt-light;
-        font-size: 22px;
+        font-size: 20px;
         padding-bottom: 6px;
     }
 
