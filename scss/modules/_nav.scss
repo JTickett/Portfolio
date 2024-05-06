@@ -10,15 +10,15 @@
     top: 0px;
     grid-area: sidenav;
     background-color: $blue-tint-trans;
-    width: 160px;
+    width: 120px;
     height: 100%;
     backdrop-filter: blur(5px);
 
     @include mq(small) {
-        width: 180px;
+        width: 140px;
     }
     @include mq(medium) {
-        width: 200px;
+        width: 180px;
     }
     @include mq(large) {
         width: 200px;
@@ -28,29 +28,31 @@
     }
 
     &-wrapper {
-        //background-color: rgba(255,255,255,0.2);
+        //margin-top: 40px;
+        padding-top: 40px;
         
     }
 
     #initials {
 
         font-weight: 600;
-        font-size: 120px;
+        font-size: 50px;
         font-family: $font-secondary;
         text-align: center;
+        
 
         
         @include mq(small) {
-            font-size: 140px;
+            font-size: 60px;
         }    
         @include mq(medium) {
-            font-size: 160px;
+            font-size: 80px;
         }    
         @include mq(large) {
-            font-size: 180px;
+            font-size: 100px;
         }                    
         @include mq(x-large) {
-            font-size: 200px;
+            font-size: 140px;
         }
 
 
@@ -59,6 +61,8 @@
             color: rgba($txt-light,1);
             line-height: 100%;
             text-shadow : 0 0 10px $water-lightest;
+            padding: 20px;
+            margin-top: 20px;
 
             &:hover {
                 text-shadow : 0 0 10px $water-lightest,0 0 10px $water-lightest;
@@ -86,26 +90,28 @@
                 }
                 width: 100%;
                 text-align: center;
-                padding-top: 15px;
-                padding-bottom: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
     
                 a {
                     color: $link;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 400;
                     font-family: $font-primary;
-                    padding: 10px 15px;
+                    padding: 10px 10px;
                     text-decoration: none;
+                    text-align: center;
+                    display: inline-block;
                     
 
                     @include mq(small) {
-                        font-size: 20px;
-                    }    
-                    @include mq(medium) {
                         font-size: 22px;
                     }    
-                    @include mq(large) {
+                    @include mq(medium) {
                         font-size: 24px;
+                    }    
+                    @include mq(large) {
+                        font-size: 26px;
                     }                    
                     @include mq(x-large) {
                         font-size: 28px;

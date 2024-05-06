@@ -36,9 +36,10 @@
 #banner-subtext {
     text-align: right;
     color: $txt-lightish;
+    color: $txt-contrast;
     font-weight: 200;
     font-size: 16px;
-    border-top: 2px solid $txt-lightish;
+    border-top: 2px solid $txt-contrast;
     font-family: $font-primary;
 
         
@@ -78,14 +79,14 @@
     bottom: 0;
     right: 0;
 
-    width: calc(100% - 160px);
+    width: calc(100% - 120px);
     height: 200px;
 
     @include mq(small) {
-        width: calc(100% - 180px);
+        width: calc(100% - 140px);
     }    
     @include mq(medium) {
-        width: calc(100% - 200px);
+        width: calc(100% - 180px);
     }    
     @include mq(large) {
         width: calc(100% - 200px);

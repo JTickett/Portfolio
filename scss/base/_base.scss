@@ -45,13 +45,13 @@
     display: grid;
 
 
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 120px 1fr;
 
     @include mq(small) {
-        grid-template-columns: 180px 1fr;
+        grid-template-columns: 140px 1fr;
     }    
     @include mq(medium) {
-        grid-template-columns: 200px 1fr;
+        grid-template-columns: 180px 1fr;
     }    
     @include mq(large) {
         grid-template-columns: 200px 1fr;
