@@ -509,6 +509,7 @@ body {
   font-weight: 400;
   font-size: 30px;
   font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
+  text-shadow: 0 0 10px #c1cae2;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-text {
