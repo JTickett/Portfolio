@@ -262,8 +262,8 @@ input {
 #background-video {
   width: 2560px;
   height: 1440px;
-  width: auto;
-  height: 100vh;
+  width: 100vw;
+  height: auto;
   position: fixed;
   z-index: -1;
   object-fit: cover;
