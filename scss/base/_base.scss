@@ -12,12 +12,13 @@
     width: $vid-w;
     height: $vid-h;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     //width: calc($vid-w/2);
     //height: calc($vid-h/2);
 
     //width: 100vw;
     //height: 100vh;
+
     position: fixed;
     z-index: -1;
     object-fit: cover;
