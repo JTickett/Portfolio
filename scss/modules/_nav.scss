@@ -188,6 +188,7 @@
     background: none;
     appearance: none;
     position: absolute;
+    margin-top: -9px;
 
     
     color: green;
@@ -195,14 +196,16 @@
     @include mq(medium) {
         display: none;
     }
-}
 
-#hamburger::after, #hamburger::before, #hamburger #burger {
-    content: "";
-    width: 100%;
-    height: 5px;
-    margin: 9px 0;
-    display: block;
-    background-color: #fff;
-    transition: 0.4s;
+
+    &::after, &::before, & #burger {
+        content: "";
+        width: 100%;
+        height: 5px;
+        margin: 9px 0;
+        display: block;
+        background-color: #fff;
+        transition: 0.4s;
+    }
+
 }

@@ -509,6 +509,7 @@ body {
   background: none;
   appearance: none;
   position: absolute;
+  margin-top: -9px;
   color: green;
 }
 @media (min-width: 768px) {
@@ -516,7 +517,6 @@ body {
     display: none;
   }
 }
-
 #hamburger::after, #hamburger::before, #hamburger #burger {
   content: "";
   width: 100%;
@@ -539,7 +539,7 @@ body {
   text-align: center;
   color: white;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 50px;
   font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
   text-shadow: 0 0 10px #c1cae2;
 }
@@ -569,7 +569,7 @@ body {
   color: #c1cae2;
   color: #FF9D00;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 20px;
   border-top: 2px solid #FF9D00;
   font-family: "Titillium Web", "Verdana", "Trebuchet MS", sans-serif;
 }
@@ -716,9 +716,9 @@ body {
 #contact-form {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 10px 10px;
+  gap: 20px 20px;
   padding: 20px;
-  width: auto;
+  min-width: 70vw;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #contact-form {
@@ -729,7 +729,7 @@ body {
 }
 @media (min-width: 768px) {
   #contact-form {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px 20px;
     padding: 20px;
   }
@@ -754,7 +754,9 @@ body {
   color: white;
   border-radius: 3px;
   border: none;
-  padding: 8px 12px;
+  padding: 10px 12px;
+  min-width: 200px;
+  width: auto;
   box-shadow: none;
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -764,7 +766,7 @@ body {
 }
 @media (min-width: 768px) {
   #contact-form input, #contact-form textarea {
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 }
 @media (min-width: 992px) {
