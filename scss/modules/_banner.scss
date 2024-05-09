@@ -5,23 +5,27 @@
 
 #banner-section {
     grid-area: banner;
+
     display: flex;
     flex-direction: column;
+
+
     align-items: center;
     justify-content: center;
+
 }
 
 #banner-text {
     text-align: center;
     color: $txt-light;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 80px;
     font-family: $font-secondary;
     text-shadow : 0 0 10px $water-lightest;
 
     
     @include mq(small) {
-        font-size: 50px;
+        font-size: 80px;
     }    
     @include mq(medium) {
         font-size: 80px;
@@ -39,14 +43,14 @@
     color: $txt-lightish;
     color: $txt-contrast;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 30px;
     border-top: 2px solid $txt-contrast;
     font-family: $font-primary;
     
 
         
     @include mq(small) {
-        font-size: 22px;
+        font-size: 30px;
     }    
     @include mq(medium) {
         font-size: 30px;
@@ -81,13 +85,13 @@
     bottom: 0;
     right: 0;
 
-    width: calc(100% - 100px);
+    width: 100%;
     height: 200px;
 
     z-index: -1;
 
     @include mq(small) {
-        width: calc(100% - 120px);
+        width: 100%;
     }    
     @include mq(medium) {
         width: calc(100% - 180px);

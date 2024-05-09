@@ -278,17 +278,13 @@ input {
   background-attachment: fixed;
   position: relative;
   display: grid;
-  grid-template-columns: 100px 1fr;
   grid-auto-rows: 100vh auto auto;
-  grid-template-areas: "sidenav banner" "sidenav main" "sidenav footer";
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  #page-wrapper {
-    grid-template-columns: 120px 1fr;
-  }
+  grid-template-areas: "banner" "main" "footer";
 }
 @media (min-width: 768px) {
   #page-wrapper {
+    grid-auto-rows: 100vh auto auto;
+    grid-template-areas: "sidenav banner" "sidenav main" "sidenav footer";
     grid-template-columns: 180px 1fr;
   }
 }
@@ -346,6 +342,7 @@ body {
   width: 100px;
   height: 100%;
   backdrop-filter: blur(5px);
+  display: none;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #sidenav {
@@ -354,6 +351,7 @@ body {
 }
 @media (min-width: 768px) {
   #sidenav {
+    display: block;
     width: 180px;
   }
 }
@@ -418,14 +416,18 @@ body {
 #sidenav-menu ul li {
   width: 100%;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 #sidenav-menu ul li:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
 #sidenav-menu ul li:hover a {
   color: #c1cae2;
+}
+@media (min-width: 992px) {
+  #sidenav-menu ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 #sidenav-menu ul li a {
   color: #728380;
@@ -495,6 +497,36 @@ body {
   color: #c1cae2;
 }
 
+#hamburger {
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  z-index: 100;
+  display: block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  appearance: none;
+  position: absolute;
+  color: green;
+}
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+#hamburger::after, #hamburger::before, #hamburger #burger {
+  content: "";
+  width: 100%;
+  height: 5px;
+  margin: 9px 0;
+  display: block;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
 #banner-section {
   grid-area: banner;
   display: flex;
@@ -507,13 +539,13 @@ body {
   text-align: center;
   color: white;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 80px;
   font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
   text-shadow: 0 0 10px #c1cae2;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-text {
-    font-size: 50px;
+    font-size: 80px;
   }
 }
 @media (min-width: 768px) {
@@ -537,13 +569,13 @@ body {
   color: #c1cae2;
   color: #FF9D00;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 30px;
   border-top: 2px solid #FF9D00;
   font-family: "Titillium Web", "Verdana", "Trebuchet MS", sans-serif;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-subtext {
-    font-size: 22px;
+    font-size: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -582,13 +614,13 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: calc(100% - 100px);
+  width: 100%;
   height: 200px;
   z-index: -1;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-gradient {
-    width: calc(100% - 120px);
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
