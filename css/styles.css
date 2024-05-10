@@ -654,6 +654,7 @@ body {
 #portfolio-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  width: 70vw;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #portfolio-wrapper {
@@ -677,14 +678,15 @@ body {
 }
 
 .portfolio-item {
-  align-items: center;
-  align-self: center;
   text-align: center;
   padding: 20px;
+  height: auto;
+  width: auto;
 }
 .portfolio-item__image {
   height: auto;
-  width: 200px;
+  width: auto;
+  max-width: 200px;
   padding: 5px;
   border-radius: 20px;
 }
