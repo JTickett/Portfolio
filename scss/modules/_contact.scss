@@ -85,7 +85,7 @@
     cursor: pointer;
 }
 
-#contact-subject , #contact-message {
+#contact-subject, #contact-message, #contact-submit {
     grid-column: span 1;
 
     @include mq(medium) {

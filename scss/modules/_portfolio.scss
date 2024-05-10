@@ -20,13 +20,14 @@
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    width: 70vw;
+    width: 90vw;
     
     @include mq(small) {
         grid-template-columns: repeat(1, 1fr);
     }    
     @include mq(medium) {
         grid-template-columns: repeat(2, 1fr);
+        width: 70vw;
     }    
     @include mq(large) {
         grid-template-columns: repeat(2, 1fr);
@@ -49,17 +50,22 @@
     height: auto;
     width: auto;
 
+
     &__image {
         height: auto;
-        width: auto;
-        max-width: 200px;
+        width: 90%;
+
+        object-fit: cover;
+
+        //max-width: 200px;
         //min-width: 200px;
+
         padding: 5px;
         border-radius: 20px;
     }
 
     &__title {
-        color: $txt-light;
+        color: $txt-contrast;
         font-size: 20px;
         padding-bottom: 6px;
     }

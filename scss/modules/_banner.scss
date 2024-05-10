@@ -18,7 +18,7 @@
 #banner-text {
     text-align: center;
     color: $txt-light;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     font-family: $font-secondary;
     text-shadow : 0 0 10px $water-lightest;
@@ -42,21 +42,26 @@
     text-align: right;
     color: $txt-lightish;
     color: $txt-contrast;
-    font-weight: 200;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 30px;
     border-top: 2px solid $txt-contrast;
     font-family: $font-primary;
+
+    text-shadow: 0 0 15px rgba(0,0,0,.8), rgba(0,0,0,.9), 0 0 5px rgba(0,0,0,1.0);
+    
+    // -webkit-text-stroke-width: 1px;
+    // -webkit-text-stroke-color: $txt-contrast;
     
 
         
     @include mq(small) {
-        font-size: 30px;
+        font-size: 40px;
     }    
     @include mq(medium) {
-        font-size: 30px;
+        font-size: 40px;
     }    
     @include mq(large) {
-        font-size: 40px;
+        font-size: 50px;
     }                    
     @include mq(x-large) {
         font-size: 50px;
