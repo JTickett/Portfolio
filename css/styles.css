@@ -705,6 +705,12 @@ body {
 .portfolio-item__link1:hover, .portfolio-item__link2:hover {
   color: #c1cae2;
 }
+.portfolio-item__link1 {
+  margin-right: 10px;
+}
+.portfolio-item__link2 {
+  margin-left: 10px;
+}
 
 #contact-section {
   background-color: rgba(1, 5, 13, 0.9);
