@@ -16,6 +16,13 @@
 
 }
 
+#portfolio-spacer {
+
+    height: 200px;
+    width: 10px;
+
+}
+
 #portfolio-wrapper {
 
     display: grid;
@@ -50,10 +57,15 @@
     height: auto;
     width: auto;
 
+    //max-height: 60v;
+
 
     &__image {
         height: auto;
         width: 90%;
+
+        min-width: 90%;
+        //max-height: 60vh;
 
         object-fit: cover;
 
@@ -61,7 +73,7 @@
         //min-width: 200px;
 
         padding: 5px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     &__title {

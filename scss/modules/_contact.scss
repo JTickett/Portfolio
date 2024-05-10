@@ -52,12 +52,19 @@
 }
 
 #contact-form input, #contact-form textarea {
-    background-color: $bg-colour;
-    color: $txt-light;
-    border-radius: 3px;
-    border: none;
-    padding: 10px 12px;
 
+    background-color: $bg-colour;
+    background-color: $blue-tint-trans;
+
+    color: $txt-light;
+
+
+
+    border-radius: 5px;
+    border: solid 1px $txt-green;
+
+
+    padding: 10px 12px;
     min-width: 200px;
     width: auto;
 
@@ -86,9 +93,15 @@
 }
 
 #contact-subject, #contact-message, #contact-submit {
+    
     grid-column: span 1;
 
     @include mq(medium) {
         grid-column: span 2;
     }   
+}
+
+#contact-message {
+    //  This is only because it's currently allowing bad resizing
+    resize: none;
 }

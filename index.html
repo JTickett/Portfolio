@@ -41,7 +41,7 @@
                 <div id="sidenav-menu">
                     <ul>
                         <li><a href="#">About<br>Me</a></li>
-                        <li><a href="#portfolio-section">My<br>Portfolio</a></li>
+                        <li><a href="#portfolio-header">My<br>Portfolio</a></li>
                         <li><a href="#">Coding<br>Examples</a></li>
                         <li><a href="#">SCS<br>Scheme</a></li>
                         <li><a href="#contact-section">Contact<br>Me</a></li>
@@ -67,12 +67,13 @@
 
         <header id="banner-section">
 
-            <!-- Mobile Menu (with Burger) -->
-            <nav>
-                <div id="hamburger">
-                    <div id="burger"></div>
-                </div>
-            </nav>
+            <!-- TODO: This needs to move out of this section, but I'm not sure how to get rid of the visible space at the bottom -->
+        <!-- Mobile Menu (with Burger) -->
+        <nav>
+            <div id="hamburger">
+                <div id="burger"></div>
+            </div>
+        </nav>
 
             <div id="banner-overlay">
                 <!-- <img src="img\banner1.jpg" alt="Banner Image" id="banner-image"> -->
@@ -82,12 +83,13 @@
                 <h3 id="banner-subtext">
                     Software Developer
                 </h3>
-                <a id="banner-link" href="#portfolio-section">
-                    Scroll Down
-                    <br>
-                    <span class="icon-chevron-down"></span>
-                </a>
+
             </div>
+            <a id="banner-link" href="#portfolio-header">
+                Scroll Down
+                <br>
+                <span class="icon-chevron-down"></span>
+            </a>
         </header>
 
         <main id="main">
@@ -96,8 +98,10 @@
 
             <section id="portfolio-section">
 
+                <div id="portfolio-spacer"></div>
+
                 
-                <header>
+                <header id="portfolio-header">
                     <h2 class="section-title">Projects</h2>
                 </header>
 
@@ -153,10 +157,10 @@
                     <form id="contact-form" action="">
 
                         <!-- <label id="contact-firstname-label" class="" for="contact-firstname">First Name</label><br> -->
-                        <input id="contact-firstname" class="" type="text" placeholder="First Name" name="contact-first-name">
+                        <input id="contact-firstname" class="" type="text" placeholder="First Name" name="contact-firstname">
 
                         <!-- <label id="contact-lastname-label" class="" for="contact-lastname">Last Name</label><br> -->
-                        <input id="contact-lastname" class="" type="text" placeholder="Last Name" name="contact-firstname" autocomplete="contact-first-name">
+                        <input id="contact-lastname" class="" type="text" placeholder="Last Name" name="contact-lastname" autocomplete="contact-first-name">
 
                         <!-- <label id="contact-email-label" class="" for="contact-email">Email</label><br> -->
                         <input id="contact-email" class="" type="text" placeholder="Email Address" name="contact-email" autocomplete="contact-email">

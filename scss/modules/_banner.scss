@@ -15,6 +15,10 @@
 
 }
 
+#banner-overlay {
+    margin: auto;
+}
+
 #banner-text {
     text-align: center;
     color: $txt-light;
@@ -42,12 +46,12 @@
     text-align: right;
     color: $txt-lightish;
     color: $txt-contrast;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 30px;
     border-top: 2px solid $txt-contrast;
     font-family: $font-primary;
 
-    text-shadow: 0 0 15px rgba(0,0,0,.8), rgba(0,0,0,.9), 0 0 5px rgba(0,0,0,1.0);
+    text-shadow: 0 0 15px rgba(0,0,0,.8), 0 0 10px  rgba(0,0,0,.9), 0 0 5px rgba(0,0,0,1.0);
     
     // -webkit-text-stroke-width: 1px;
     // -webkit-text-stroke-color: $txt-contrast;
@@ -69,7 +73,7 @@
 }
 
 #banner-link {
-    margin-top: 300px;
+    margin-bottom: 5%;
     text-align: center;
     align-self: center;
     display: block;
@@ -102,7 +106,7 @@
         width: calc(100% - 180px);
     }    
     @include mq(large) {
-        width: calc(100% - 200px);
+        width: calc(100% - 220px);
     }                    
     @include mq(x-large) {
         width: calc(100% - 250px);
