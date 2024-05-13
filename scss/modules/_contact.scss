@@ -3,13 +3,6 @@
 // ==========================================================================
 
 
-
-#contact-section {
-
-    background-color: $bg-colour-dark;
-
-}
-
 #contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -90,6 +83,7 @@
 
 #contact-submit {
     cursor: pointer;
+    
 }
 
 #contact-subject, #contact-message, #contact-submit {

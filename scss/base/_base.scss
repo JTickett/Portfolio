@@ -99,6 +99,8 @@ body {
     padding: 20px;
     font-size: 30px;
 
+    text-shadow : 0 0 10px $water-lightest;
+
     @include mq(small) {
         font-size: 30px;
     }    
@@ -111,4 +113,17 @@ body {
     @include mq(x-large) {
         font-size: 50px;
     }
+}
+
+.section {
+    background-color: $bg-colour-dark;
+
+    //padding-top: 200px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: $txt-light;
 }

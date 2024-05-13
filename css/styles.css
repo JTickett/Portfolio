@@ -323,6 +323,7 @@ body {
   color: white;
   padding: 20px;
   font-size: 30px;
+  text-shadow: 0 0 10px #c1cae2;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .section-title {
@@ -343,6 +344,15 @@ body {
   .section-title {
     font-size: 50px;
   }
+}
+
+.section {
+  background-color: rgba(1, 5, 13, 0.9);
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 #sidenav {
@@ -667,14 +677,6 @@ body {
   grid-area: main;
 }
 
-#portfolio-section {
-  background-color: rgba(1, 5, 13, 0.9);
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #portfolio-spacer {
   height: 200px;
   width: 10px;
@@ -739,10 +741,6 @@ body {
 }
 .portfolio-item__link2 {
   margin-left: 10px;
-}
-
-#contact-section {
-  background-color: rgba(1, 5, 13, 0.9);
 }
 
 #contact-wrapper {
@@ -840,6 +838,54 @@ body {
   resize: none;
 }
 
+#scs-spacer {
+  height: 200px;
+  width: 10px;
+}
+
+#scs-wrapper {
+  display: grid;
+  width: 80vw;
+}
+#scs-wrapper h3 {
+  font-size: 30px;
+  font-size: 2rem;
+  text-align: center;
+  color: #c1cae2;
+  color: #FF9D00;
+  padding: 10px;
+  padding-top: 30px;
+}
+#scs-wrapper p {
+  font-size: 1em;
+  padding: 10px;
+  line-height: 1.5em;
+  color: #c1cae2;
+  text-align: center;
+}
+#scs-wrapper a {
+  text-align: center;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #728380;
+}
+#scs-wrapper a:hover {
+  color: #c1cae2;
+}
+#scs-wrapper ul {
+  margin-left: 20px;
+  text-align: center;
+}
+#scs-wrapper ul li {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #c1cae2;
+}
+@media (min-width: 768px) {
+  #scs-wrapper {
+    width: 70vw;
+  }
+}
 #footer {
   grid-area: footer;
   background-color: rgba(1, 5, 13, 0.9);

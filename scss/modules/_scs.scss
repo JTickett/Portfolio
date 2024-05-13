@@ -1,0 +1,86 @@
+// ==========================================================================
+//  SCS Scheme Page
+// ==========================================================================
+
+
+
+#scs-spacer {
+
+    height: 200px;
+    width: 10px;
+
+}
+
+#scs-wrapper {
+
+    display: grid;
+    width: 80vw;
+
+    h3 {
+        font-size: 30px;
+        font-size: 2rem;
+        text-align: center;
+
+        color: $txt-lightish;
+        color: $txt-contrast;
+
+        padding: 10px;
+        padding-top: 30px;
+
+        //text-shadow : 0 0 10px $txt-contrast;
+        
+    }
+
+    p {
+        font-size: 1em;
+        padding: 10px;
+        line-height: 1.5em;
+
+        color: $txt-lightish;
+        text-align: center;
+    }
+
+    a {
+        
+        text-align: center;
+        font-size: 1.3em;
+        text-decoration: none;
+
+        color: $link;
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+
+
+    ul {
+        margin-left: 20px;
+        text-align: center;
+
+        li {
+            font-size: 1em;
+            line-height: 1.5em;
+            color: $txt-lightish;
+        }
+
+    }
+
+
+    
+    @include mq(small) {
+    }    
+    @include mq(medium) {
+        width: 70vw;
+    }    
+    @include mq(large) {
+    }                    
+    @include mq(x-large) {
+    }
+
+
+	//background-clip: content-box;
+    
+
+}
+
