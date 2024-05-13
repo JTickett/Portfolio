@@ -29,6 +29,22 @@
     
 }
 
+#background-image {
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    z-index: -2;
+    object-fit: cover;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+
 
 //  Wrapped for the whole page.
 //  Probably just useful for splitting off the nav and main sections
