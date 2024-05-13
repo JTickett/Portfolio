@@ -8,24 +8,20 @@
 
     $vid-w: 2560px;
     $vid-h: 1440px;
-
     width: $vid-w;
     height: $vid-h;
     //width: calc($vid-w/2);
     //height: calc($vid-h/2);
-
-
     width: 100vw;
     height: 100vh;
 
     position: fixed;
-    z-index: -1;
     object-fit: cover;
-
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: -1;
     
 }
 
@@ -57,9 +53,6 @@
     background-attachment: fixed;
     position: relative;
 
-
-
-
     display: grid;
 
     grid-auto-rows: 100vh auto auto;
@@ -68,10 +61,7 @@
     "main"
     "footer";
 
-
     //grid-template-columns: 100px 1fr;
-
-
 
     @include mq(small) {
         //grid-template-columns: 120px 1fr;
