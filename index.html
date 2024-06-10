@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://jtickett.github.io">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -82,12 +83,8 @@
 
             <div id="banner-overlay">
                 <!-- <img src="img\banner1.jpg" alt="Banner Image" id="banner-image"> -->
-                <h1 id="banner-text">
-                    James Tickett
-                </h1>
-                <h3 id="banner-subtext">
-                    Software Developer
-                </h3>
+                <h1 id="banner-text">James Tickett</h1>
+                <h3 id="banner-subtext">Software Developer</h3>
 
             </div>
             <a id="banner-link" href="#portfolio-header">
@@ -159,16 +156,16 @@
                         <h2 class="section-title">Contact Me</h2>
                     </header>
 
-                    <form id="contact-form" action="">
+                    <form id="contact-form" action="" onsubmit="submitContactForm(); return false;">
 
                         <!-- <label id="contact-firstname-label" class="" for="contact-firstname">First Name</label><br> -->
                         <input id="contact-firstname" class="" type="text" placeholder="First Name" name="contact-firstname">
 
                         <!-- <label id="contact-lastname-label" class="" for="contact-lastname">Last Name</label><br> -->
-                        <input id="contact-lastname" class="" type="text" placeholder="Last Name" name="contact-lastname" autocomplete="contact-first-name">
+                        <input id="contact-lastname" class="" type="text" placeholder="Last Name" name="contact-lastname">
 
                         <!-- <label id="contact-email-label" class="" for="contact-email">Email</label><br> -->
-                        <input id="contact-email" class="" type="text" placeholder="Email Address" name="contact-email" autocomplete="contact-email">
+                        <input id="contact-email" class="" type="text" placeholder="Email Address" name="contact-email">
 
                         <!-- <label id="contact-phone-label" class="" for="contact-phone">Phone</label><br> -->
                         <input id="contact-phone" class="" type="text" placeholder="Phone Number">

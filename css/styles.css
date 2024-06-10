@@ -582,6 +582,8 @@ body {
   font-size: 50px;
   font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
   text-shadow: 0 0 10px #c1cae2;
+  display: block;
+  opacity: 1;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner-text {
@@ -601,6 +603,32 @@ body {
 @media (min-width: 1200px) {
   #banner-text {
     font-size: 120px;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wave {
+  opacity: 1;
+  position: relative;
+  display: inline-block;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
