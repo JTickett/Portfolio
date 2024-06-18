@@ -565,7 +565,7 @@ body {
 
 #banner-section {
   grid-area: banner;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;

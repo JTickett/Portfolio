@@ -3,10 +3,12 @@
 // ==========================================================================
 
 
+
 #banner-section {
     grid-area: banner;
 
-    display: flex;
+    display: none;
+
     flex-direction: column;
 
 
