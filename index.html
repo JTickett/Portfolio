@@ -22,13 +22,13 @@
     <link rel="preconnect" href="https://jtickett.github.io">
 
     
-    <script>console.log("Before JQuery: " + Date.now().toISOString())</script>
+    <script>console.log("Before JQuery: " + new Date(Date.now()).toISOString())</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     
-    <script>console.log("After JQuery: " + Date.now().toISOString())</script>
+    <script>console.log("After JQuery: " + new Date(Date.now()).toISOString())</script>
 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -36,9 +36,9 @@
 </head>
 <body>
     <img id="background-image" src="https://jtickett.github.io/Portfolio/img/waterposter.png" alt="Background Image"></img>
-    <script>console.log("After Poster: " + Date.now().toISOString())</script>
+    <script>console.log("After Poster: " + new Date(Date.now()).toISOString())</script>
     <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.png"></video>
-    <script>console.log("After Video: " + Date.now().toISOString())</script>
+    <script>console.log("After Video: " + new Date(Date.now()).toISOString())</script>
 
     <div id="page-wrapper">
         
@@ -202,6 +202,6 @@
         </footer>
     </div>
     
-    <script>console.log("End of BODY tag: " + Date.now().toISOString())</script>
+    <script>console.log("End of BODY tag: " + new Date(Date.now()).toISOString())</script>
 </body>
 </html>

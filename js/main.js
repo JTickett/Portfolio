@@ -4,7 +4,8 @@
 window.addEventListener('load', function () {
 
     //  Just for debug purposes :)
-    console.log("Page Loaded");
+    console.log("Page Loaded: " + new Date(Date.now()).toISOString()
+);
 
     //  Start wave animation
     makeWave()
@@ -14,7 +15,8 @@ window.addEventListener('load', function () {
     $("#banner-section").css("display","flex").hide().fadeIn(3000);
 
     //  The idea was that this line would be spat out once the animation completed, but it doesn't appear to work that way at all... it's instant
-    console.log("Fading in done");
+    console.log("Fading in done: " + new Date(Date.now()).toISOString()
+);
 
 })
 
