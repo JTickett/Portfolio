@@ -1,9 +1,22 @@
 
 
+
+$('')
+
+
+
+
+
 //  An effect to make the Banner Text gently fade in from transparent
 function fadeIn(){
 
-    $("#banner-text").fadeIn(3000);
+    $("#banner-section").fadeIn(3000);
+
+}
+//  Testing Fade Out
+function fadeOut(){
+
+    $("#banner-section").fadeOut(3000);
 
 }
 
@@ -16,6 +29,8 @@ function makeWave(){
     for (let i=0; i<element.length; i++) {
         element[i].style.animationDelay = i*0.10 + "s";
     }
+
+
 }
 
 
