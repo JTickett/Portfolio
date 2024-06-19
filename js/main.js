@@ -1,4 +1,10 @@
 
+let mobileNavIsOpen = false;
+
+
+
+
+
 
 //  This event is on the Page Load, and it's main purpose is to trigger the text animations
 window.addEventListener('load', function () {
@@ -17,11 +23,39 @@ window.addEventListener('load', function () {
     $("#banner-section").css("display","flex").hide().fadeIn(delay);
 
     //  The idea was that this line would be spat out once the animation completed, but it doesn't appear to work that way at all... it's instant
-    console.log("Fading in done: " + new Date(Date.now()).toISOString()
-);
+    console.log("Fading in done: " + new Date(Date.now()).toISOString());
+
+    
+    const burgerIcon = document.querySelector('#hamburger');
+    burgerIcon.addEventListener('click', function() {
+
+        
+        //  1. Make the sidebar display
+        const $mobileNav = $('#sidenav');
+
+        
+        if (!mobileNavIsOpen) {
+            //  If it's not already open, then open it
+            $mobileNav.css('display','block').css('width','100%')
+            //  and update the variable to show it's open
+            mobileNavIsOpen = true;
+        } else {
+            $mobileNav.css('display','none').css('width','100%')
+            mobileNavIsOpen = false;
+        }
+
+        
+
+    
+    });
 
 })
 
+
+function displayMobileNav(){
+
+
+}
 
 
 
