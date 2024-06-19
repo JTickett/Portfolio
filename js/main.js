@@ -3,16 +3,18 @@
 //  This event is on the Page Load, and it's main purpose is to trigger the text animations
 window.addEventListener('load', function () {
 
+
+    const delay = 5000;
+
     //  Just for debug purposes :)
-    console.log("Page Loaded: " + new Date(Date.now()).toISOString()
-);
+    console.log("Page Loaded: " + new Date(Date.now()).toISOString());
 
     //  Start wave animation
     makeWave()
 
     //  Set it to Flex, Hide it again, *then* fade in.
     //  This might seem weird, but it is kind of necessary to do it this way 
-    $("#banner-section").css("display","flex").hide().fadeIn(3000);
+    $("#banner-section").css("display","flex").hide().fadeIn(delay);
 
     //  The idea was that this line would be spat out once the animation completed, but it doesn't appear to work that way at all... it's instant
     console.log("Fading in done: " + new Date(Date.now()).toISOString()
