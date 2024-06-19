@@ -29,29 +29,19 @@ window.addEventListener('load', function () {
     const burgerIcon = document.querySelector('#hamburger');
     burgerIcon.addEventListener('click', function() {
 
-        const $navMenu = $('#sidenav');
-        const navMenu = document.querySelector('#sidenav');
+        const nav = document.querySelector('#sidenav');
+        const navWrapper = document.querySelector('#sidenav-wrapper');
+        const navMenu = document.querySelector('#sidenav-menu');
+        const navSocials = document.querySelector('#sidenav-socials');
 
-        navMenu.classList.toggle('mobilenav');
-        navMenu.classList.toggle('sidenav');
-
-        
-        
-        // if (!mobileNavIsOpen) {
-        //     //  If it's not already open, then open it
-        //     $navMenu.css('display','block').css('width','100%')
-        //     //  and update the variable to show it's open
-        //     mobileNavIsOpen = true;
-        // } else {
-        //     $navMenu.css('display','none').css('width','100%')
-        //     mobileNavIsOpen = false;
-        // }
-
-
-
-
-        
-
+        nav.classList.toggle('mobilenav');
+        nav.classList.toggle('sidenav');
+        navWrapper.classList.toggle('mobilenav-wrapper');
+        navWrapper.classList.toggle('sidenav-wrapper');
+        navMenu.classList.toggle('mobilenav-menu');
+        navMenu.classList.toggle('sidenav-menu');
+        navSocials.classList.toggle('mobilenav-socials');
+        navSocials.classList.toggle('sidenav-socials');
     
     });
 
