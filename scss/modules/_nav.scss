@@ -13,14 +13,10 @@
     width: 100px;
     height: 100%;
     backdrop-filter: blur(5px);
-
     z-index: 1;
 
     display: none;
 
-    @include mq(small) {
-        width: 120px;
-    }
     @include mq(medium) {
         display: block;
         width: 180px;
@@ -171,27 +167,14 @@
     top: 0px;
     grid-area: sidenav;
     background-color: $blue-tint-trans;
-    width: 100px;
+    width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
-
+    backdrop-filter: blur(7px);
     z-index: 1;
+    
+    display: block;
 
-    display: none;
 
-    @include mq(small) {
-        width: 120px;
-    }
-    @include mq(medium) {
-        display: block;
-        width: 180px;
-    }
-    @include mq(large) {
-        width: 220px;
-    }
-    @include mq(x-large) {
-        width: 250px;
-    }
 
     &-wrapper {
         //margin-top: 40px;
@@ -206,20 +189,9 @@
         font-family: $font-secondary;
         text-align: center;
         
-
-        
         @include mq(small) {
             font-size: 60px;
         }    
-        @include mq(medium) {
-            font-size: 80px;
-        }    
-        @include mq(large) {
-            font-size: 110px;
-        }                    
-        @include mq(x-large) {
-            font-size: 140px;
-        }
 
 
         a {
@@ -255,7 +227,7 @@
                 &:hover {
                     background-color: rgba(255,255,255,0.02);
                     a {
-                        color: $link-hover;
+                        color: $link2-hover;
                         text-shadow: none;
                     }
                 }
@@ -269,7 +241,7 @@
                 }         
     
                 a {
-                    color: $link;
+                    color: $link2;
                     font-size: 20px;
                     font-weight: 400;
                     font-family: $font-primary;
@@ -280,7 +252,7 @@
                     text-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.9), 0 0 5px rgb(0, 0, 0);
 
                     
-
+                    
                     
 
                     @include mq(small) {
@@ -364,6 +336,7 @@
     background: none;
     appearance: none;
     position: absolute;
+    position: fixed;
     margin-top: -9px;
 
     

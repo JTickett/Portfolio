@@ -372,11 +372,6 @@ body {
   z-index: 1;
   display: none;
 }
-@media (min-width: 576px) and (max-width: 768px) {
-  .sidenav {
-    width: 120px;
-  }
-}
 @media (min-width: 768px) {
   .sidenav {
     display: block;
@@ -509,33 +504,12 @@ body {
   top: 0px;
   grid-area: sidenav;
   background-color: rgba(12, 0, 104, 0.1);
-  width: 100px;
+  width: 100%;
   height: 100%;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   z-index: 1;
-  display: none;
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .mobilenav {
-    width: 120px;
-  }
-}
-@media (min-width: 768px) {
-  .mobilenav {
-    display: block;
-    width: 180px;
-  }
-}
-@media (min-width: 992px) {
-  .mobilenav {
-    width: 220px;
-  }
-}
-@media (min-width: 1200px) {
-  .mobilenav {
-    width: 250px;
-  }
+  display: block;
 }
 .mobilenav-wrapper {
   padding-top: 30px;
@@ -549,21 +523,6 @@ body {
 @media (min-width: 576px) and (max-width: 768px) {
   .mobilenav #initials {
     font-size: 60px;
-  }
-}
-@media (min-width: 768px) {
-  .mobilenav #initials {
-    font-size: 80px;
-  }
-}
-@media (min-width: 992px) {
-  .mobilenav #initials {
-    font-size: 110px;
-  }
-}
-@media (min-width: 1200px) {
-  .mobilenav #initials {
-    font-size: 140px;
   }
 }
 .mobilenav #initials a {
@@ -593,7 +552,7 @@ body {
   background-color: rgba(255, 255, 255, 0.02);
 }
 .mobilenav-menu ul li:hover a {
-  color: #c1cae2;
+  color: #FFC800;
   text-shadow: none;
 }
 @media (min-width: 992px) {
@@ -603,7 +562,7 @@ body {
   }
 }
 .mobilenav-menu ul li a {
-  color: #728380;
+  color: #FF9D00;
   font-size: 20px;
   font-weight: 400;
   font-family: "Titillium Web", "Verdana", "Trebuchet MS", sans-serif;
@@ -691,6 +650,7 @@ body {
      -moz-appearance: none;
           appearance: none;
   position: absolute;
+  position: fixed;
   margin-top: -9px;
   color: green;
 }

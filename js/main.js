@@ -29,20 +29,26 @@ window.addEventListener('load', function () {
     const burgerIcon = document.querySelector('#hamburger');
     burgerIcon.addEventListener('click', function() {
 
-        
-        //  1. Make the sidebar display
-        const $mobileNav = $('#sidenav');
+        const $navMenu = $('#sidenav');
+        const navMenu = document.querySelector('#sidenav');
+
+        navMenu.classList.toggle('mobilenav');
+        navMenu.classList.toggle('sidenav');
 
         
-        if (!mobileNavIsOpen) {
-            //  If it's not already open, then open it
-            $mobileNav.css('display','block').css('width','100%')
-            //  and update the variable to show it's open
-            mobileNavIsOpen = true;
-        } else {
-            $mobileNav.css('display','none').css('width','100%')
-            mobileNavIsOpen = false;
-        }
+        
+        // if (!mobileNavIsOpen) {
+        //     //  If it's not already open, then open it
+        //     $navMenu.css('display','block').css('width','100%')
+        //     //  and update the variable to show it's open
+        //     mobileNavIsOpen = true;
+        // } else {
+        //     $navMenu.css('display','none').css('width','100%')
+        //     mobileNavIsOpen = false;
+        // }
+
+
+
 
         
 
