@@ -359,7 +359,7 @@ body {
   color: white;
 }
 
-#sidenav {
+.sidenav {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -373,56 +373,56 @@ body {
   display: none;
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  #sidenav {
+  .sidenav {
     width: 120px;
   }
 }
 @media (min-width: 768px) {
-  #sidenav {
+  .sidenav {
     display: block;
     width: 180px;
   }
 }
 @media (min-width: 992px) {
-  #sidenav {
+  .sidenav {
     width: 220px;
   }
 }
 @media (min-width: 1200px) {
-  #sidenav {
+  .sidenav {
     width: 250px;
   }
 }
-#sidenav-wrapper {
+.sidenav-wrapper {
   padding-top: 30px;
 }
-#sidenav #initials {
+.sidenav #initials {
   font-weight: 600;
   font-size: 50px;
   font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
   text-align: center;
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  #sidenav #initials {
+  .sidenav #initials {
     font-size: 60px;
   }
 }
 @media (min-width: 768px) {
-  #sidenav #initials {
+  .sidenav #initials {
     font-size: 80px;
   }
 }
 @media (min-width: 992px) {
-  #sidenav #initials {
+  .sidenav #initials {
     font-size: 110px;
   }
 }
 @media (min-width: 1200px) {
-  #sidenav #initials {
+  .sidenav #initials {
     font-size: 140px;
   }
 }
-#sidenav #initials a {
+.sidenav #initials a {
   text-decoration: none;
   color: white;
   line-height: 100%;
@@ -430,10 +430,10 @@ body {
   padding: 20px;
   margin-top: 20px;
 }
-#sidenav #initials a:hover {
+.sidenav #initials a:hover {
   text-shadow: 0 0 10px #c1cae2, 0 0 10px #c1cae2;
 }
-#sidenav-menu ul {
+.sidenav-menu ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,24 +441,24 @@ body {
   margin-top: 40px;
   margin-bottom: 10px;
 }
-#sidenav-menu ul li {
+.sidenav-menu ul li {
   width: 100%;
   text-align: center;
 }
-#sidenav-menu ul li:hover {
+.sidenav-menu ul li:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
-#sidenav-menu ul li:hover a {
+.sidenav-menu ul li:hover a {
   color: #c1cae2;
   text-shadow: none;
 }
 @media (min-width: 992px) {
-  #sidenav-menu ul li {
+  .sidenav-menu ul li {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-#sidenav-menu ul li a {
+.sidenav-menu ul li a {
   color: #728380;
   font-size: 20px;
   font-weight: 400;
@@ -469,37 +469,182 @@ body {
   display: inline-block;
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  #sidenav-menu ul li a {
+  .sidenav-menu ul li a {
     font-size: 22px;
   }
 }
 @media (min-width: 768px) {
-  #sidenav-menu ul li a {
+  .sidenav-menu ul li a {
     font-size: 24px;
   }
 }
 @media (min-width: 992px) {
-  #sidenav-menu ul li a {
+  .sidenav-menu ul li a {
     font-size: 26px;
   }
-  #sidenav-menu ul li a br {
+  .sidenav-menu ul li a br {
     content: "";
   }
-  #sidenav-menu ul li a br:after {
+  .sidenav-menu ul li a br:after {
     content: " ";
   }
 }
 @media (min-width: 1200px) {
-  #sidenav-menu ul li a {
+  .sidenav-menu ul li a {
     font-size: 28px;
   }
 }
-#sidenav-socials {
+.sidenav-socials {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-#sidenav-socials a {
+.sidenav-socials a {
+  text-decoration: none;
+}
+
+.mobilenav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  grid-area: sidenav;
+  background-color: rgba(12, 0, 104, 0.1);
+  width: 100px;
+  height: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 1;
+  display: none;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .mobilenav {
+    width: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .mobilenav {
+    display: block;
+    width: 180px;
+  }
+}
+@media (min-width: 992px) {
+  .mobilenav {
+    width: 220px;
+  }
+}
+@media (min-width: 1200px) {
+  .mobilenav {
+    width: 250px;
+  }
+}
+.mobilenav-wrapper {
+  padding-top: 30px;
+}
+.mobilenav #initials {
+  font-weight: 600;
+  font-size: 50px;
+  font-family: Roboto, "Verdana", "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .mobilenav #initials {
+    font-size: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .mobilenav #initials {
+    font-size: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .mobilenav #initials {
+    font-size: 110px;
+  }
+}
+@media (min-width: 1200px) {
+  .mobilenav #initials {
+    font-size: 140px;
+  }
+}
+.mobilenav #initials a {
+  text-decoration: none;
+  color: white;
+  line-height: 100%;
+  text-shadow: 0 0 10px #c1cae2;
+  padding: 20px;
+  margin-top: 20px;
+}
+.mobilenav #initials a:hover {
+  text-shadow: 0 0 10px #c1cae2, 0 0 10px #c1cae2;
+}
+.mobilenav-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.mobilenav-menu ul li {
+  width: 100%;
+  text-align: center;
+}
+.mobilenav-menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+.mobilenav-menu ul li:hover a {
+  color: #c1cae2;
+  text-shadow: none;
+}
+@media (min-width: 992px) {
+  .mobilenav-menu ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.mobilenav-menu ul li a {
+  color: #728380;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Titillium Web", "Verdana", "Trebuchet MS", sans-serif;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.9), 0 0 5px rgb(0, 0, 0);
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .mobilenav-menu ul li a {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .mobilenav-menu ul li a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .mobilenav-menu ul li a {
+    font-size: 26px;
+  }
+  .mobilenav-menu ul li a br {
+    content: "";
+  }
+  .mobilenav-menu ul li a br:after {
+    content: " ";
+  }
+}
+@media (min-width: 1200px) {
+  .mobilenav-menu ul li a {
+    font-size: 28px;
+  }
+}
+.mobilenav-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.mobilenav-socials a {
   text-decoration: none;
 }
 
@@ -536,7 +681,7 @@ body {
   top: 20px;
   left: 20px;
   width: 50px;
-  z-index: 100;
+  z-index: 2;
   display: block;
   cursor: pointer;
   border: none;

@@ -37,23 +37,23 @@
 <body>
     <img id="background-image" src="https://jtickett.github.io/Portfolio/img/waterposter.jpg" alt="Background Image"></img>
     <script>console.log("After Poster: " + new Date(Date.now()).toISOString())</script>
-    <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.png"></video>
+    <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.jpg" playsinline></video>
     <script>console.log("After Video: " + new Date(Date.now()).toISOString())</script>
 
     <div id="page-wrapper">
         
 
         <!-- Sidebar Menu -->
-        <nav id="sidenav">
-            <div id="sidenav-wrapper">
+        <nav id="sidenav" class="sidenav">
+            <div id="sidenav-wrapper" class="sidenav-wrapper">
                 
-                <div id="initials">
+                <div id="initials" class="initials">
                     <a href="#">
                         JT
                     </a>
                 </div>
 
-                <div id="sidenav-menu">
+                <div id="sidenav-menu" class="sidenav-menu">
                     <ul>
                         <li><a href="about.html#about-section">About<br>Me</a></li>
                         <li><a href="#portfolio-header">My<br>Portfolio</a></li>
@@ -63,7 +63,7 @@
                     </ul>
                 </div>
 
-                <div id="sidenav-socials">
+                <div id="sidenav-socials" class="sidenav-socials">
                     <a href="https://www.linkedin.com/in/jtickett/">
                         <div class="socials-icon" id="socials-li">
                             <span class="icon-linkedin2"></span>

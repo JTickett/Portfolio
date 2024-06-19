@@ -2,8 +2,8 @@
 //  Nav Bar (Both the Sidebar and the Mobile view)
 // ==========================================================================
 
-
-#sidenav {
+//  This class is used when it's in Desktop mode
+.sidenav {
 
     position: fixed;
     left: 0px;
@@ -163,6 +163,167 @@
 }
 
 
+//  Class used for mobile view
+.mobilenav {
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    grid-area: sidenav;
+    background-color: $blue-tint-trans;
+    width: 100px;
+    height: 100%;
+    backdrop-filter: blur(5px);
+
+    z-index: 1;
+
+    display: none;
+
+    @include mq(small) {
+        width: 120px;
+    }
+    @include mq(medium) {
+        display: block;
+        width: 180px;
+    }
+    @include mq(large) {
+        width: 220px;
+    }
+    @include mq(x-large) {
+        width: 250px;
+    }
+
+    &-wrapper {
+        //margin-top: 40px;
+        padding-top: 30px;
+        
+    }
+
+    #initials {
+
+        font-weight: 600;
+        font-size: 50px;
+        font-family: $font-secondary;
+        text-align: center;
+        
+
+        
+        @include mq(small) {
+            font-size: 60px;
+        }    
+        @include mq(medium) {
+            font-size: 80px;
+        }    
+        @include mq(large) {
+            font-size: 110px;
+        }                    
+        @include mq(x-large) {
+            font-size: 140px;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: rgba($txt-light,1);
+            line-height: 100%;
+            text-shadow : 0 0 10px $water-lightest;
+            padding: 20px;
+            margin-top: 20px;
+
+            &:hover {
+                text-shadow : 0 0 10px $water-lightest,0 0 10px $water-lightest;
+            }
+        }
+    }
+
+    &-menu {
+
+        ul {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            //  Again too much padding
+            gap: 5px;
+
+
+            margin-top: 40px;
+            margin-bottom: 10px;
+
+            li {
+                &:hover {
+                    background-color: rgba(255,255,255,0.02);
+                    a {
+                        color: $link-hover;
+                        text-shadow: none;
+                    }
+                }
+                width: 100%;
+                text-align: center;
+
+                //  Too much padding for mobile landscape
+                @include mq(large) {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }         
+    
+                a {
+                    color: $link;
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: $font-primary;
+                    padding: 10px 10px;
+                    text-decoration: none;
+                    text-align: center;
+                    display: inline-block;
+                    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.9), 0 0 5px rgb(0, 0, 0);
+
+                    
+
+                    
+
+                    @include mq(small) {
+                        font-size: 22px;
+                    }    
+                    @include mq(medium) {
+                        font-size: 24px;
+                    }    
+                    @include mq(large) {
+                        font-size: 26px;
+                        br {
+                            content: "";
+                            //display: none;
+                        }
+                        br:after {
+                            content: " "; // note we've added space here.
+                        }
+                    }                    
+                    @include mq(x-large) {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-socials {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        //text-shadow: 0 0 15px rgba(255,255,255,.8), 0 0 10px  rgba(0,0,0,.9), 0 0 5px rgba(0,0,0,1.0);
+        
+        a {
+            text-decoration: none;
+           
+        }
+    }
+    
+    
+
+}
+
 
 .socials-icon {
     color: $link;
@@ -195,7 +356,7 @@
     top: 20px;
     left: 20px;
     width: 50px;
-    z-index: 100;
+    z-index: 2;
     display: block;
     cursor: pointer;
     border: none;
