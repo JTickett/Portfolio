@@ -67,52 +67,73 @@ function checkEmailValid($email){
 
 
 function submitContactForm(){
+    
     //  Read all the values from the input fields
-    // const conFirst = document.querySelector("#contact-firstname")
-    // const conLast = document.querySelector("#contact-lastname")
-    // const conEmail = document.querySelector("#contact-email")
-    // const conPhone = document.querySelector("#contact-phone")
-    // const conSubject = document.querySelector("#contact-subject")
-    // const conMessage = document.querySelector("#contact-message")
-
     const conFirst = $("#contact-firstname")
     const conLast = $("#contact-lastname")
     const conEmail = $("#contact-email")
     const conPhone = $("#contact-phone")
     const conSubject = $("#contact-subject")
     const conMessage = $("#contact-message")
-
     //  Store in an array (for looping)
-    const conFields = [conFirst,conLast,conEmail,conPhone,conSubject,conMessage];
+    const conFields = [conFirst.val(),conLast.val(),conEmail.val(),conPhone.val(),conSubject.val(),conMessage.val()];
 
-    //  Create an object to track missing fields
-    let errors = {};
-
-    //  Check that none of the required values are missing
-    for (field in conFields) {
-
-        //  Debug data
-        console.log("Field Name: " + field);
-        console.log("Field Value: " + conFields[field].val());
-
-        if (conFields[field].val() == "") {
-            errors[field] = true;
-        } else {
-            errors[field] = false;
-        }
+    if (conFields.includes('')) {
+        console.log('There is a blank field!')
+        alert('Please fill out all the required fields!');
+    } else {
+        console.log('No fields are blank!')
     }
 
-    //  1. Report on any missing fields
-    console.log(errors);
-    //  Mark fields as incomplete
+
+
+
+    // //  Track errors for each field
+    // const errorFirst = false;
+    // const errorLast = false;
+    // const errorEmail = false;
+    // const errorPhone = false;
+    // const errorSubject = false;
+    // const errorMessage = false;
+    // //  Store in an array
+    // let errors = [errorFirst,errorLast,errorEmail,errorPhone,errorSubject,errorMessage];
+    // let fieldsEmpty = false;
+
+    // //  Loop through all fields and log any that are blank as errors
+    // for (field in conFields) {
+
+    //     //  Debug data
+    //     console.log("Field Name: " + field);
+    //     console.log("Field Value: " + conFields[field].val());
+
+    //     if (conFields[field].val() == "") {
+    //         errors[field] = true;
+    //     } else {
+    //         errors[field] = false;
+    //     }
+    // }
+
+    // //  1. Report on any missing fields
+    // console.log(errors);
+
+    // //  Check for any false fields.
+    // let checker = arr => arr.every(v => v === false);
+    // const noBlanks = checker(errors);
+    // console.log(noBlanks);
+
+    // if (noErrors) {
+    //     // 
+    // }
+
+
 
     //  2. Check validity of email
     let emailValid = checkEmailValid()
     
     if (emailValid) {
         // Form Submit!
-        console.log("Form completed successfully");
-        alert("Success!");
+        // console.log("Form completed successfully");
+        //alert("Success!");
     } else {
         //  Display validation error.
     }

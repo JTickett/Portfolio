@@ -637,7 +637,6 @@ body {
   position: absolute;
   position: fixed;
   margin-top: -9px;
-  color: green;
 }
 @media (min-width: 768px) {
   #hamburger {
@@ -966,6 +965,10 @@ body {
 
 #contact-message {
   resize: none;
+}
+
+.missing-field {
+  border: 2px solid red;
 }
 
 #scs-spacer {

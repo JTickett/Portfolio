@@ -329,9 +329,6 @@
     position: fixed;
     margin-top: -9px;
 
-    
-    color: green;
-
     @include mq(medium) {
         display: none;
     }

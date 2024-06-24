@@ -99,3 +99,7 @@
     //  This is only because it's currently allowing bad resizing
     resize: none;
 }
+
+.missing-field {
+    border: 2px solid red;
+}
