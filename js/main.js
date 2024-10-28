@@ -2,7 +2,13 @@
 let mobileNavIsOpen = false;
 
 
-
+window.addEventListener('scroll', function (e) {
+    if (window.scrollY > 100) {
+        document.querySelector("#page-wrapper").classList.add('is-scrolling');
+    } else {
+        document.querySelector("#page-wrapper").classList.remove('is-scrolling');
+    }
+});
 
 
 
@@ -32,16 +38,20 @@ window.addEventListener('load', function () {
         const nav = document.querySelector('#sidenav');
         const navWrapper = document.querySelector('#sidenav-wrapper');
         const navMenu = document.querySelector('#sidenav-menu');
-        const navSocials = document.querySelector('#sidenav-socials');
+        // const navSocials = document.querySelector('#sidenav-socials');
 
         nav.classList.toggle('mobilenav');
         nav.classList.toggle('sidenav');
+        // nav.classList.toggle('bonus');
+
         navWrapper.classList.toggle('mobilenav-wrapper');
         navWrapper.classList.toggle('sidenav-wrapper');
         navMenu.classList.toggle('mobilenav-menu');
         navMenu.classList.toggle('sidenav-menu');
-        navSocials.classList.toggle('mobilenav-socials');
-        navSocials.classList.toggle('sidenav-socials');
+        // navSocials.classList.toggle('mobilenav-socials');
+        // navSocials.classList.toggle('sidenav-socials');
+        
+        
     
     });
 

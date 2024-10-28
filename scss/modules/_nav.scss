@@ -158,12 +158,15 @@
 
 }
 
+.bonus {
+    right: 0px;
+}
 
 //  Class used for mobile view
 .mobilenav {
 
     position: fixed;
-    left: 0px;
+    right: 100%;
     top: 0px;
     grid-area: sidenav;
     background-color: $blue-tint-trans;
@@ -174,6 +177,8 @@
 
     display: block;
 
+    
+    transition: 1.4s;
 
 
     &-wrapper {
@@ -329,6 +334,7 @@
     position: fixed;
     margin-top: -9px;
 
+
     @include mq(medium) {
         display: none;
     }
@@ -345,3 +351,5 @@
     }
 
 }
+
+

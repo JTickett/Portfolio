@@ -498,9 +498,13 @@ body {
   text-decoration: none;
 }
 
+.bonus {
+  right: 0px;
+}
+
 .mobilenav {
   position: fixed;
-  left: 0px;
+  right: 100%;
   top: 0px;
   grid-area: sidenav;
   background-color: rgba(12, 0, 104, 0.1);
@@ -510,6 +514,7 @@ body {
           backdrop-filter: blur(7px);
   z-index: 1;
   display: block;
+  transition: 1.4s;
 }
 .mobilenav-wrapper {
   padding-top: 30px;
