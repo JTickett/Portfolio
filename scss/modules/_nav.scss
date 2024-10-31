@@ -158,6 +158,31 @@
 
 }
 
+#w3 {
+    width: 40px;
+    filter: $battleship-gray-hacky;
+    &:hover{
+        filter: $french-gray-hacky;
+        color: black;
+        fill: black;
+    }
+
+    
+    @include mq(small) {
+        width: 38px;
+    }    
+    @include mq(medium) {
+        width: 42px;
+    }    
+    @include mq(large) {
+        width: 46px;
+    }                    
+    @include mq(x-large) {
+        width: 50px;
+    }
+
+}
+
 .bonus {
     right: 0px;
 }
@@ -166,7 +191,7 @@
 .mobilenav {
 
     position: fixed;
-    right: 100%;
+    // right: 100%; // I don't understand why this is needed. When I remove it, the menu starts working.
     top: 0px;
     grid-area: sidenav;
     background-color: $blue-tint-trans;
