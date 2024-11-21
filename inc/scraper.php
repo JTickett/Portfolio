@@ -60,6 +60,8 @@ foreach($html->find('div .topic-stat') as $topic) {
 	echo "$topicName $topicScore \n";
 }
 
+
+
 // Clean up resources
 $html->clear();
 unset($html);
