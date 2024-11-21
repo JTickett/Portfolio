@@ -11,11 +11,11 @@
 
         <div id="sidenav-menu" class="sidenav-menu">
             <ul>
-                <li><a href="about.html#about-section">About<br>Me</a></li>
-                <li><a href="#portfolio-header">My<br>Portfolio</a></li>
-                <li><a href="coding.html#coding-section">Coding<br>Examples</a></li>
-                <li><a href="scs.html#scs-section">SCS<br>Scheme</a></li>
-                <li><a href="#contact-section">Contact<br>Me</a></li>
+                <li><a href="about#about-section">About<br>Me</a></li>
+                <li><a href="index#portfolio-header">My<br>Portfolio</a></li>
+                <li><a href="coding#coding-section">Coding<br>Examples</a></li>
+                <li><a href="scs#scs-section">SCS<br>Scheme</a></li>
+                <li><a href="index#contact-section">Contact<br>Me</a></li>
             </ul>
         </div>
 
