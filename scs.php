@@ -1,28 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    
-    <!-- Title & Favicon -->
-    <title>James Tickett - Portfolio</title>
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
-
-    <!-- Stylesheets -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <link rel="prefetch" href="https://jtickett.github.io/Portfolio/img/waterposter.png" />
-
-    <!-- Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://jtickett.github.io">
-
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <?php
+        include('inc/head.php');
+    ?>
 </head>
 <body>
     <img id="background-image" src="https://jtickett.github.io/Portfolio/img/waterposter.png" alt="Background Image"></img>
@@ -30,44 +11,9 @@
 
     <div id="page-wrapper">
         
-
-        <!-- Sidebar Menu -->
-        <nav id="sidenav" class="sidenav">
-            <div id="sidenav-wrapper" class="sidenav-wrapper">
-                
-                <div id="initials" class="initials">
-                    <a href="#">
-                        JT
-                    </a>
-                </div>
-
-                <div id="sidenav-menu" class="sidenav-menu">
-                    <ul>
-                        <li><a href="about.html#about-section">About<br>Me</a></li>
-                        <li><a href="#portfolio-header">My<br>Portfolio</a></li>
-                        <li><a href="coding.html#coding-section">Coding<br>Examples</a></li>
-                        <li><a href="scs.html#scs-section">SCS<br>Scheme</a></li>
-                        <li><a href="#contact-section">Contact<br>Me</a></li>
-                    </ul>
-                </div>
-
-                <div id="sidenav-socials" class="sidenav-socials">
-                    <a href="https://www.linkedin.com/in/jtickett/" target="_blank">
-                        <div class="socials-icon" id="socials-li">
-                            <span class="icon-linkedin2"></span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/JTickett" target="_blank">
-                        <div class="socials-icon icon-github" id="socials-gh" >
-                        </div>
-                    </a>
-                    <a href="https://www.w3profile.com/jtickett" target="_blank">
-                        <img id="w3" src="img/w3schools_logo2.svg" alt="W3Schools Logo">
-                    </a>
-
-                </div>
-            </div>
-        </nav>
+        <?php
+            include('inc/nav.php');
+        ?>
 
 
 
