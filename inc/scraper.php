@@ -1,5 +1,7 @@
 <?php
 
+// https://www.zenrows.com/blog/web-scraping-php#project-setup
+
 // -- These are the tags I need to filter out:
 // <div class = "topic-stat">
 // <div class="total-points">

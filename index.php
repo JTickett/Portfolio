@@ -100,11 +100,6 @@
                         <h2 class="section-title">Contact Me</h2>
                     </header>
 
-                    <!-- <embed src="https://teamtreehouse.com/profiles/jamestickett2" style="width:500px; height: 300px;">    
-                    <iframe src="https://teamtreehouse.com/profiles/jamestickett2" width="100%" height="300">
-                        <p>Your browser does not support iframes.</p>
-                    </iframe> -->
-
                     <form id="contact-form" action="" onsubmit="submitContactForm(); return false;">
 
                         <!-- <label id="contact-firstname-label" class="" for="contact-firstname">First Name</label><br> -->
