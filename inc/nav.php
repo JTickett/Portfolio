@@ -4,18 +4,18 @@
     <div id="sidenav-wrapper" class="sidenav-wrapper">
         
         <div id="initials" class="initials">
-            <a href="#">
+            <a href="index.php">
                 JT
             </a>
         </div>
 
         <div id="sidenav-menu" class="sidenav-menu">
             <ul>
-                <li><a href="about#about-section">About<br>Me</a></li>
-                <li><a href="index#portfolio-header">My<br>Portfolio</a></li>
-                <li><a href="coding#coding-section">Coding<br>Examples</a></li>
-                <li><a href="scs#scs-section">SCS<br>Scheme</a></li>
-                <li><a href="index#contact-section">Contact<br>Me</a></li>
+                <li><a href="about.php#about-section">About<br>Me</a></li>
+                <li><a href="index.php#portfolio-header">My<br>Portfolio</a></li>
+                <li><a href="coding.php#coding-section">Coding<br>Examples</a></li>
+                <li><a href="scs.php#scs-section">SCS<br>Scheme</a></li>
+                <li><a href="index.php#contact-section">Contact<br>Me</a></li>
             </ul>
         </div>
 
