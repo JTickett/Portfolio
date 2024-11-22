@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "simplehtmldom/simplehtmldom": "^2.0@RC",
+        "league/oauth2-google": "^4.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

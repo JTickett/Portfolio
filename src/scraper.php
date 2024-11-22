@@ -7,7 +7,7 @@
 // <div class="total-points">
 
 // Include the Simple HTML DOM parser library
-include_once("simplehtmldom/simple_html_dom.php");
+include_once("vendor/simplehtmldom/simplehtmldom/simple_html_dom.php");
 
 // Specify the target website's URL
 $url = "https://teamtreehouse.com/profiles/jamestickett2";
