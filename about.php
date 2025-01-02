@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php
-        include('inc/head.php');
+        include('src/head.php');
     ?>
 </head>
 <body>
@@ -13,7 +13,7 @@
         
 
         <?php
-            include('inc/nav.php');
+            include('src/nav.php');
         ?>
 
 

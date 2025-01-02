@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php
-        include('inc/head.php');
+        include('src/head.php');
     ?>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div id="page-wrapper">
         
         <?php
-            include('inc/nav.php');
+            include('src/nav.php');
         ?>
 
         <header id="banner-section">
@@ -94,7 +94,7 @@
             </section>
 
             <?php
-                include('inc/contact.php');
+                include('src/contact.php');
             ?>
         </main>
 
