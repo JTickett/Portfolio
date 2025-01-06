@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php
+        $pageTitle = "SCS Scheme";
         include('src/head.php');
     ?>
 </head>

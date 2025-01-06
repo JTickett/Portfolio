@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php
+        $pageTitle = "Coding Examples";
         include('src/head.php');
     ?>
 </head>

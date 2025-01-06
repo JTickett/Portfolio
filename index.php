@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php
+        $pageTitle = "James Tickett";
         include('src/head.php');
     ?>
 </head>

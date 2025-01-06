@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php
+        $pageTitle = "About Me";
         include('src/head.php');
     ?>
 </head>

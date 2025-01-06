@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     
     <!-- Title & Favicon -->
-    <title>James Tickett - Portfolio</title>
+    <title><?php echo isset($pageTitle) ? $pageTitle : 'James Tickett - Portfolio'; ?></title>
     <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
 
     <!-- Stylesheets -->
