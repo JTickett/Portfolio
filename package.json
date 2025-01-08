@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fullpage.js": "^4.0.31",
+    "jquery-validation": "^1.21.0",
+    "prismjs": "^1.29.0"
+  }
+}
