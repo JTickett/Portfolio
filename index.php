@@ -67,7 +67,7 @@
                         <a target="_blank" class="portfolio-item__link2" href="https://github.com/JTickett/Portfolio-Website">View Code</a>
                     </div>
                     <div class="portfolio-item">
-                        <img class="portfolio-item__image" src="img\jsarray.png" alt="Project Placeholder Image">
+                        <img class="portfolio-item__image" src="img\jsarray2.png" alt="Project Placeholder Image">
                         <h3 class="portfolio-item__title">Javascript Array</h3>
                         <a target="_blank" class="portfolio-item__link1" href="https://js-array.james-tickett.netmatters-scs.co.uk/">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="https://github.com/JTickett/jsarray">View Code</a>
