@@ -61,7 +61,7 @@
                         <a target="_blank" class="portfolio-item__link2" href="https://github.com/JTickett/Netmatters-Website">View Code</a>
                     </div>
                     <div class="portfolio-item">
-                        <img class="portfolio-item__image" src="img\portfolio2.jpg" alt="Project Placeholder Image">
+                        <img class="portfolio-item__image" src="img\portfolio3.jpg" alt="Project Placeholder Image">
                         <h3 class="portfolio-item__title">Portfolio Website</h3>
                         <a target="_blank" class="portfolio-item__link1" href="https://james-tickett.netmatters-scs.co.uk/">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="https://github.com/JTickett/Portfolio-Website">View Code</a>
