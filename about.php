@@ -7,8 +7,8 @@
     ?>
 </head>
 <body>
-    <img id="background-image" src="https://jtickett.github.io/Portfolio/img/waterposter.png" alt="Background Image"></img>
-    <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.png"></video>
+    <img id="background-image" src="https://jtickett.github.io/Portfolio/img/waterposter.jpg" alt="Background Image"></img>
+    <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.jpg"></video>
 
     <div id="page-wrapper">
         
