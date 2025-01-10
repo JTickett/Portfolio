@@ -63,17 +63,22 @@
 
                     <h3>Personal</h3>
                     <p>
-                        Coming Soon...
+                        I have been passionate about technology since the early days of MS-DOS and Windows 3.11, sparking a lifelong curiosity for both hardware and software. Over the years, I have explored a variety of programming languages and frameworks, largely through self-driven learning. I thrive on new challenges and enjoy creating innovative solutions to complex problems. Recently, I’ve refocused on development, updating my skills to become a full-stack developer and rekindling my passion for tech.
                     </p>
 
                     <h3>Education</h3>
                     <p>
-                        Coming Soon...
+                        I graduated with a 2:1 in BSc Computer-Aided Visualization from Anglia Ruskin University, where I honed my skills in 3D modeling, animation, and CAD/CAM. More recently, I completed the Scion Coalition Scheme, an intensive, award-winning training program simulating real-world web development. This experience expanded my expertise in front-end and back-end development, UI/UX design, and databases, while also allowing me to collaborate with and lead peers in team projects.
                     </p>
 
                     <h3>Experience</h3>
                     <p>
-                        Coming Soon...
+                        My professional background includes several years as a Lead Software Developer, where I worked with technologies like C#, Java, and SQL, creating solutions that integrated with platforms such as AudienceView and Xero. I’ve also gained practical experience in IT support, CAD visualization, and Drupal development. Most recently, I have been building a portfolio of modern, responsive web applications to showcase my full-stack development capabilities.
+                    </p>
+
+                    <h3>Skills</h3>
+                    <p>
+                        I am a quick learner and have a strong grasp of the fundamentals of web development. I am also a team player and enjoy collaborating with others to achieve common goals. I am a problem solver and enjoy the challenge of finding creative solutions to complex problems. I am a self-starter and enjoy working independently to achieve goals. I am a good communicator and enjoy working with others to achieve common goals.
                     </p>
 
                 </div>
