@@ -105,9 +105,11 @@
                 <br>
                 Back to Top
             </a>
-            
         </footer>
     </div>
+            <?php
+                include('src/footer.php');
+            ?>
     
 </body>
 </html>
