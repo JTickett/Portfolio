@@ -55,13 +55,13 @@ function getPDO() {
 }
 
 // This is only called once the form has been both validated and sanitised.
-function insertContactSubmission(ContactFormData $formData) {
+function insertContactSubmission(Contact $formData) {
     try {
         $pdo = getPDO();
-        $query = "INSERT INTO contact (firstName, lastName, email, phone, subject, message) VALUES (:firstName, :lastName, :email, :phone, :subject, :message)";
+        $query = "INSERT INTO contact (firstname, lastname, email, phone, subject, message) VALUES (:firstname, :lastname, :email, :phone, :subject, :message)";
         $stmt = $pdo->prepare($query);
-        $stmt->bindValue(':firstName', $formData->firstName);
-        $stmt->bindValue(':lastName', $formData->lastName);
+        $stmt->bindValue(':firstname', $formData->firstname);
+        $stmt->bindValue(':lastname', $formData->lastname);
         $stmt->bindValue(':email', $formData->email);
         $stmt->bindValue(':phone', $formData->phone);
         $stmt->bindValue(':subject', $formData->subject);

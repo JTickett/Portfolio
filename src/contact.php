@@ -5,7 +5,21 @@
             <h2 class="section-title">Contact Me</h2>
         </header>
 
+        <div id="message-area">
+            <div id="success-message" class="message-box success">
+                Placeholder text!
+                <button class="success">x</button>
+            </div>
+
+            <div id="fail-message" class="message-box fail">
+                Placeholder text!
+                <button class="fail">x</button>
+            </div>
+        </div>
+
         <form id="contact-form" action="" onsubmit="submitContactForm(); return false;">
+
+
 
             <!-- <label id="contact-firstname-label" class="" for="contact-firstname">First Name</label><br> -->
             <input id="contact-firstname" class="" type="text" placeholder="First Name" name="contact-firstname">
