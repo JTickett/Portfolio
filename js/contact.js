@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isFormValid()) {
             //alert('Please fill in all required fields');
             console.log('Form Submitting...');
-            submitForm(nameField.value.trim(), companyField.value.trim(), emailField.value.trim(), phoneField.value.trim(), messageField.value.trim(), marketing.checked);
+            submitForm(firstnameField.value.trim(), lastnameField.value.trim(), emailField.value.trim(), phoneField.value.trim(), subjectField.value.trim(), messageField.value.trim());
         } else {
             //alert('Form submitted');
             console.log('Alert user to fill in all required fields');
@@ -38,23 +38,79 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     
+function submitForm(firstname, lastname, email, phone, subject, message) {
 
-});
+    const messageBoxes = document.getElementById('message-area');
+    messageBoxes.innerHTML = '';
 
+    const formData = new FormData();
+    formData.append("firstname", firstname);
+    formData.append("lastname", lastname);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("subject", subject);
+    formData.append("message", message);
 
+    fetch("src/contact-validation.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Show success message
+            makeMessageBox(data.message, 'success');
+            const form = document.getElementById('email-form');
+            form.reset();
+        } else {
+            console.log('Error!');
+            console.log(data);
+            // Show error message
 
-// Not sure if this is needed or not since it's not a required field, but it may need some sanitisation done to it
-function isCompanyValid() {
-    const company = companyField.value.trim();
-    if (company === '') {
-        companyField.classList.add('has-error');
+            for (let i = 0; i < data.message.length; i++) {
+                makeMessageBox(data.message[i], 'fail');
+            }
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        makeMessageBox("An unexpected error occurred. Please try again.", 'fail');
+    });
+
+}
+
+function isNameValid() {
+    // Get the name value
+    const firstname = firstnameField.value.trim();
+
+    // Check if it's blank
+    if (firstname === '') {
+        firstnameField.classList.add('has-error');
         hasError = true;
-        console.log('Company field blank');
+        console.log('First Name field blank');
         return false;
     } else {
-        companyField.classList.remove('has-error');
+        firstnameField.classList.remove('has-error');
         hasError = false;
-        console.log('Company field valid');
+        console.log('First Name field valid');
+
+        // There doesn't need to be any more validation here
+        return true;
+    }
+}
+
+// Not sure if this is needed or not since it's not a required field, but it may need some sanitisation done to it
+function isSubjectValid() {
+    const subject = subjectField.value.trim();
+    if (subject === '') {
+        subjectField.classList.add('has-error');
+        hasError = true;
+        console.log('Subject field blank');
+        return false;
+    } else {
+        subjectField.classList.remove('has-error');
+        hasError = false;
+        console.log('Subject field valid');
         return true;
     }
 }
@@ -122,14 +178,37 @@ function isMessageValid() {
 
 function isFormValid() {
     
-    var nameValid = isNameValid();
+    var firstnameValid = isNameValid();
     var emailValid = isEmailValid();
     var phoneValid = isPhoneValid();
+    var subjectValid = isSubjectValid();
     var messageValid = isMessageValid();
 
-    if (nameValid && emailValid && phoneValid && messageValid) {
+    if (firstnameValid && emailValid && phoneValid && subjectValid && messageValid) {
         return true;
     } else {
         return false;
     }
 }
+
+function makeMessageBox(message, type) {
+    const messageBoxes = document.getElementById('message-area');
+    const messageBox = document.createElement('div');
+    const button = document.createElement('button');
+    button.innerHTML = 'x';
+
+    if (type === 'success') {
+        messageBox.classList.add('message-box', 'success');
+        button.classList.add('success');
+    } else if (type === 'fail') {
+        messageBox.classList.add('message-box', 'fail');
+        button.classList.add('fail');
+    }
+
+    messageBox.innerHTML = message;
+    messageBox.appendChild(button);
+    messageBoxes.appendChild(messageBox);
+}
+
+});
+

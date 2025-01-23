@@ -94,7 +94,7 @@ class Contact {
 
     public function isPhoneValid() {
         return preg_match(PHONE_REGEX, $this->phone);
-    }   
+    }
 
     public function isMessageValid() {
         return strlen($this->message) >= 5;

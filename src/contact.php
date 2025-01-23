@@ -17,27 +17,37 @@
             </div>
         </div>
 
-        <form id="contact-form" action="" onsubmit="submitContactForm(); return false;">
+        <form id="contact-form" method="POST" action="src/contact-validation.php">
 
+            <div id="contact-firstname-wrapper">
+                <label id="contact-firstname-label" class="required-field" for="contact-firstname">First Name</label><br>
+                <input id="contact-firstname" class="" type="text" name="contact-firstname">
+            </div>
 
+            <div id="contact-lastname-wrapper">
+                <label id="contact-lastname-label" class="" for="contact-lastname">Last Name</label><br>
+                <input id="contact-lastname" class="" type="text" name="contact-lastname">
+            </div>
 
-            <!-- <label id="contact-firstname-label" class="" for="contact-firstname">First Name</label><br> -->
-            <input id="contact-firstname" class="" type="text" placeholder="First Name" name="contact-firstname">
+            <div id="contact-email-wrapper">
+                <label id="contact-email-label" class="required-field" for="contact-email">Email</label><br>
+                <input id="contact-email" class="" type="text" name="contact-email">
+            </div>
 
-            <!-- <label id="contact-lastname-label" class="" for="contact-lastname">Last Name</label><br> -->
-            <input id="contact-lastname" class="" type="text" placeholder="Last Name" name="contact-lastname">
+            <div id="contact-phone-wrapper">
+                <label id="contact-phone-label" class="required-field" for="contact-phone">Phone</label><br>
+                <input id="contact-phone" class="" type="text">
+            </div>
 
-            <!-- <label id="contact-email-label" class="" for="contact-email">Email</label><br> -->
-            <input id="contact-email" class="" type="text" placeholder="Email Address" name="contact-email">
+            <div id="contact-subject-wrapper">
+                <label id="contact-subject-label" class="required-field" for="contact-subject">Subject</label><br>
+                <input id="contact-subject" class="" type="text">
+            </div>
 
-            <!-- <label id="contact-phone-label" class="" for="contact-phone">Phone</label><br> -->
-            <input id="contact-phone" class="" type="text" placeholder="Phone Number">
-
-            <!-- <label id="contact-subject-label" class="" for="contact-subject">Subject</label><br> -->
-            <input id="contact-subject" class="" type="text" placeholder="Subject">
-
-            <!-- <label id="contact-message-label" class="" for="contact-message">Message</label><br> -->
-            <textarea id="contact-message" rows="10" columns="40" class="" placeholder="Message"></textarea>
+            <div id="contact-message-wrapper">
+                <label id="contact-message-label" class="required-field" for="contact-message">Message</label><br>
+                <textarea id="contact-message" rows="10" columns="40" class=""></textarea>
+            </div>
 
             <input id="contact-submit" class="" type="submit" value="Submit">
 

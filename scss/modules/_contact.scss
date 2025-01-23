@@ -18,6 +18,8 @@
     gap: 20px 20px;
     padding: 20px;
 
+
+
     //width: 300px;
     min-width: 70vw;
 
@@ -50,7 +52,7 @@
     background-color: $blue-tint-trans;
 
     color: $txt-light;
-
+    width: 100%;
 
 
     border-radius: 5px;
@@ -59,7 +61,6 @@
 
     padding: 10px 12px;
     min-width: 200px;
-    width: auto;
 
 
     @include mq(small) {
@@ -83,10 +84,9 @@
 
 #contact-submit {
     cursor: pointer;
-    
 }
 
-#contact-subject, #contact-message, #contact-submit {
+#contact-subject-wrapper, #contact-message-wrapper, #contact-submit {
     
     grid-column: span 1;
 
@@ -167,4 +167,13 @@
 
 .form-control:invalid {
     border-color: $has-error-color;
+}
+
+label.required-field:after {
+    content: " *";
+    color: $required-field-color;
+}
+
+input, textarea {
+    margin-top: 12px;
 }
