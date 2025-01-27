@@ -18,6 +18,8 @@
     gap: 20px 20px;
     padding: 20px;
 
+
+
     //width: 300px;
     min-width: 70vw;
 
@@ -50,7 +52,7 @@
     background-color: $blue-tint-trans;
 
     color: $txt-light;
-
+    width: 100%;
 
 
     border-radius: 5px;
@@ -59,7 +61,6 @@
 
     padding: 10px 12px;
     min-width: 200px;
-    width: auto;
 
 
     @include mq(small) {
@@ -83,10 +84,9 @@
 
 #contact-submit {
     cursor: pointer;
-    
 }
 
-#contact-subject, #contact-message, #contact-submit {
+#contact-subject-wrapper, #contact-message-wrapper, #contact-submit {
     
     grid-column: span 1;
 
@@ -100,6 +100,80 @@
     resize: none;
 }
 
+
+#message-area {
+    display: block;
+
+    #success-message {
+      display: none;
+    }
+
+    #fail-message {
+      display: none;
+    }
+
+    .message-box {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+
+      button {
+        float: right;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        color: black;
+        text-shadow: 0 1px 0 white;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+
+        &:focus,
+        &:hover {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+        }
+      }
+    }
+
+    .success {
+      background-color: $status-success-background;
+      border-color: $status-success-border;
+      color: $status-success-color;
+    }
+
+    .fail {
+      background-color: $status-fail-background;
+      border-color: $status-fail-border;
+      color: $status-fail-color;
+    }
+  }
+
 .missing-field {
     border: 2px solid red;
+}
+
+// Form validation related styles
+.form-control.has-error {
+    border-color: $has-error-color;
+}
+
+.form-control:invalid {
+    border-color: $has-error-color;
+}
+
+label.required-field:after {
+    content: " *";
+    color: $required-field-color;
+}
+
+input, textarea {
+    margin-top: 12px;
 }

@@ -56,6 +56,15 @@ $scroll             : white;
 $scroll-hover       : $water-lightest;
 
 
+$status-success-background          : #2ecc71;
+$status-success-border              : #d6e9c6;
+$status-success-color               : white;
+$status-fail-background             : #f2dede;
+$status-fail-border                 : #ebccd1;
+$status-fail-color                  : #a94442;
+$required-field-color               : #d24d57;
+$has-error-color                    : #d64541;
+
 
 //  Fonts
 $font-titillium     : "Titillium Web", 'Verdana', 'Trebuchet MS', sans-serif;
@@ -67,14 +76,8 @@ $font-trebuchet     : 'Trebuchet MS', sans-serif;
 $font-tahoma        : 'Tahoma', sans-serif;
 $font-arial         : 'Arial', sans-serif;
 
-
 $font-primary       : $font-titillium;
 $font-secondary     : $font-roboto;
-
-
-
-
-
 
 
 //  Breakpoints

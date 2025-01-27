@@ -1,5 +1,7 @@
 <?php
 
+require_once 'email.php';
+
 function getPDO() {
 
     // Create a static variable to store the PDO object
@@ -55,13 +57,13 @@ function getPDO() {
 }
 
 // This is only called once the form has been both validated and sanitised.
-function insertContactSubmission(ContactFormData $formData) {
+function insertContactSubmission(Contact $formData) {
     try {
         $pdo = getPDO();
-        $query = "INSERT INTO contact (firstName, lastName, email, phone, subject, message) VALUES (:firstName, :lastName, :email, :phone, :subject, :message)";
+        $query = "INSERT INTO contact (firstname, lastname, email, phone, subject, message) VALUES (:firstname, :lastname, :email, :phone, :subject, :message)";
         $stmt = $pdo->prepare($query);
-        $stmt->bindValue(':firstName', $formData->firstName);
-        $stmt->bindValue(':lastName', $formData->lastName);
+        $stmt->bindValue(':firstname', $formData->firstname);
+        $stmt->bindValue(':lastname', $formData->lastname);
         $stmt->bindValue(':email', $formData->email);
         $stmt->bindValue(':phone', $formData->phone);
         $stmt->bindValue(':subject', $formData->subject);
@@ -69,7 +71,11 @@ function insertContactSubmission(ContactFormData $formData) {
         $success = $stmt->execute();
         
         if ($success) {
-            return ['success' => true, 'message' => 'Your message has been sent!'];
+            if (sendEmail($formData->firstname, $formData->lastname, $formData->email, $formData->phone, $formData->subject, $formData->message)) {
+                return ['success' => true, 'message' => 'Your message has been sent!'];
+            } else {
+                return ['success' => false, 'message' => 'Failed to send email.'];
+            }
         } else {
             return ['success' => false, 'message' => 'Failed to insert contact submission.'];
         }

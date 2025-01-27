@@ -7,5 +7,5 @@
 <script src="node_modules/prismjs/components/prism-markup-templating.js"></script>
 <script src="node_modules/prismjs/components/prism-php.js"></script>
 <script type="text/javascript" src="js/main.js" defer></script>
-<!-- <script type="text/javascript" src="js/prism.js" defer></script> -->
+<script type="text/javascript" src="js/contact.js" defer></script>
 

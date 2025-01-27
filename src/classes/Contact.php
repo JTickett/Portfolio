@@ -11,7 +11,7 @@
  const PHONE_REGEX = '/^[0-9]{10,15}$/';
  const EMAIL_REGEX = '/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
 
-class ContactFormData {
+class Contact {
 
     // This is a static variable that holds the status messages.
     private static $statusMessages = [
@@ -34,8 +34,8 @@ class ContactFormData {
         "invalidTelephone" => "The telephone format is incorrect.",
     ];
 
-    public $firstName;
-    public $lastName;
+    public $firstname;
+    public $lastname;
     
     public $email;
     public $phone;
@@ -46,8 +46,8 @@ class ContactFormData {
 
     // Sanitise the data.
     public function sanitiseFields() {
-        $this->firstName = trim($this->firstName ?? '');
-        $this->lastName = trim($this->lastName ?? '');
+        $this->firstname = trim($this->firstname ?? '');
+        $this->lastname = trim($this->lastname ?? '');
         $this->email = trim($this->email ?? '');
         $this->phone = trim($this->phone ?? '');
         $this->subject = trim($this->subject ?? '');
@@ -58,7 +58,7 @@ class ContactFormData {
         // This method also needs to be responsible for first checking if the required fields are filled.
         // If they are not, it should return an error message, *BUT* it should also return the fields that are *invalid* too.
 
-        if (empty($this->firstName)) {
+        if (empty($this->firstname)) {
             $this->responseStatuses[] = self::$statusMessages["missingName"];
         }
 
@@ -94,7 +94,7 @@ class ContactFormData {
 
     public function isPhoneValid() {
         return preg_match(PHONE_REGEX, $this->phone);
-    }   
+    }
 
     public function isMessageValid() {
         return strlen($this->message) >= 5;
