@@ -1,5 +1,7 @@
 <?php
 
+require_once 'email.php';
+
 function getPDO() {
 
     // Create a static variable to store the PDO object
@@ -69,7 +71,11 @@ function insertContactSubmission(Contact $formData) {
         $success = $stmt->execute();
         
         if ($success) {
-            return ['success' => true, 'message' => 'Your message has been sent!'];
+            if (sendEmail($formData->firstname, $formData->lastname, $formData->email, $formData->phone, $formData->subject, $formData->message)) {
+                return ['success' => true, 'message' => 'Your message has been sent!'];
+            } else {
+                return ['success' => false, 'message' => 'Failed to send email.'];
+            }
         } else {
             return ['success' => false, 'message' => 'Failed to insert contact submission.'];
         }
