@@ -3,6 +3,12 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// Debug
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+// Define log directory relative to project root
+$logPath = dirname(__DIR__) . '/logs/mail.log';
+ini_set('error_log', $logPath);
 
 function sendEmail($firstName, $lastName, $email, $phone, $subject, $message) {
 
@@ -23,12 +29,22 @@ function sendEmail($firstName, $lastName, $email, $phone, $subject, $message) {
         $toEmail = $_ENV['EMAIL_TO'];
     } catch (Exception $e) {
         echo 'Message: ' .$e->getMessage();
+        error_log('Email Error in sendEmail: ' . $e->getMessage() . 
+                  ' [Error Code: ' . $e->getCode() . ']');
     }
 
     try {
 
         // Create a new PHPMailer instance
         $mail = new PHPMailer(true);
+
+        // Enable debug output
+        $mail->SMTPDebug = 2;  // Add this line for detailed debug output
+
+        // Capture debug output
+        $mail->Debugoutput = function($str, $level) {
+            error_log("PHPMailer Debug [$level]: $str");
+        };
 
         // Set the SMTP settings
         $mail->isSMTP();
@@ -40,6 +56,8 @@ function sendEmail($firstName, $lastName, $email, $phone, $subject, $message) {
         $mail->Port = $smtpPort;
     } catch (Exception $e) {
         echo 'Message: ' .$e->getMessage();
+        error_log('Email Error in sendEmail: ' . $e->getMessage() . 
+                  ' [Error Code: ' . $e->getCode() . ']');
     }
 
     try {
@@ -61,12 +79,17 @@ function sendEmail($firstName, $lastName, $email, $phone, $subject, $message) {
             echo 'Message could not be sent.';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
             $success = false;
+            error_log('Email Error in sendEmail - ErrorInfo: ' . $mail->ErrorInfo . 
+                     ' - Last SMTP Error: ' . $mail->getSMTPInstance()->getError()[1]);
         } else {
             echo 'Message has been sent';
             $success = true;
+            error_log('Email Success in sendEmail: ' . $mail->ErrorInfo . ']');
         }
     } catch (Exception $e) {
         echo 'Message: ' .$e->getMessage();
+        error_log('Email Error in sendEmail: ' . $e->getMessage() . 
+                  ' [Error Code: ' . $e->getCode() . ']');
     }
 
     return $success;

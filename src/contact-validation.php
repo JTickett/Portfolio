@@ -16,7 +16,7 @@ require_once 'classes/Contact.php';
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 // Define log directory relative to project root
-$logPath = dirname(__DIR__) . '/logs/php-error.log';
+$logPath = dirname(__DIR__) . '/logs/.log';
 ini_set('error_log', $logPath);
 
 header('Content-Type: application/json');

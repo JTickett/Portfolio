@@ -2,6 +2,13 @@
 
 require_once 'email.php';
 
+// Debug
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+// Define log directory relative to project root
+$logPath = dirname(__DIR__) . '/logs/sql.log';
+ini_set('error_log', $logPath);
+
 function getPDO() {
 
     // Create a static variable to store the PDO object
