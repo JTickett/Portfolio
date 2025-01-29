@@ -3,14 +3,15 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Debug
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-// Define log directory relative to project root
-$logPath = dirname(__DIR__) . '/logs/mail.log';
-ini_set('error_log', $logPath);
-
 function sendEmail($firstName, $lastName, $email, $phone, $subject, $message) {
+
+    // Debug
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    // Define log directory relative to project root
+    $logPath = dirname(__DIR__) . '/logs/mail.log';
+    ini_set('error_log', $logPath);
+    error_log('Testing log path: ' . ini_get('error_log'));
 
     $success = false;
 
