@@ -2,7 +2,7 @@ name: Deploy to Digital Ocean
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 jobs:
   deploy:
@@ -22,5 +22,10 @@ jobs:
       
       - name: Deploy with rsync
         run: |
-          rsync -avz --delete ./ ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:/var/www/your-app/
-          ssh ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }} 'cd /var/www/your-app && npm install && pm2 restart your-app' 
+          rsync -avz --delete ./ ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:/var/www/html/
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }} '
+            cd /var/www/html && 
+            sudo chown -R www-data:www-data . &&
+            sudo chmod -R 755 . &&
+            sudo systemctl restart apache2
+          ' 
