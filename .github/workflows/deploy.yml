@@ -42,9 +42,9 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.DROPLET_IP }} >> ~/.ssh/known_hosts
       
-      - name: Deploy with rsync
+      - name: Deploy to server
         run: |
-          rsync -avz --delete ./ ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:/var/www/html/
+          rsync -avz --delete --exclude='.env' ./  ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:/var/www/html/
           
       - name: Run post-deployment commands
         run: |
