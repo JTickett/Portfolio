@@ -16,7 +16,14 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: unnecessary
           if_key_exists: replace
+          config: |
+            Host *
+              StrictHostKeyChecking no
+          name: id_rsa
           
+      - name: Set SSH key permissions
+        run: chmod 600 ~/.ssh/id_rsa
+      
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.DROPLET_IP }} >> ~/.ssh/known_hosts
       
