@@ -1,0 +1,26 @@
+name: Deploy to Digital Ocean
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: unnecessary
+          if_key_exists: replace
+          
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.DROPLET_IP }} >> ~/.ssh/known_hosts
+      
+      - name: Deploy with rsync
+        run: |
+          rsync -avz --delete ./ ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:/var/www/your-app/
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }} 'cd /var/www/your-app && npm install && pm2 restart your-app' 
