@@ -73,7 +73,7 @@
                         iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress 
                         and see how much they?ve covered in certain areas.
                     </p>
-                    <a href="https://teamtreehouse.com/profiles/jamestickett2">
+                    <a href="https://teamtreehouse.com/profiles/jamestickett">
                         Total Score
                     </a>
 

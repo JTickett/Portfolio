@@ -10,7 +10,7 @@
 include_once("vendor/simplehtmldom/simplehtmldom/simple_html_dom.php");
 
 // Specify the target website's URL
-$url = "https://teamtreehouse.com/profiles/jamestickett2";
+$url = "https://teamtreehouse.com/profiles/jamestickett";
 
 // Initialize a cURL session
 $curl = curl_init();
