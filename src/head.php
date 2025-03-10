@@ -1,21 +1,21 @@
     <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    
+
     <!-- Title & Favicon -->
     <title><?php echo isset($pageTitle) ? $pageTitle : 'James Tickett - Portfolio'; ?></title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
 
 
     <!-- Stylesheets -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/prismjs/themes/prism-tomorrow.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/prismjs/themes/prism-tomorrow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="prefetch" href="https://jtickett.github.io/Portfolio/img/waterposter.jpg" />
 
