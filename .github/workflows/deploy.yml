@@ -44,7 +44,22 @@ jobs:
 
       - name: Deploy to server
         run: |
-          rsync -avz --delete --exclude='.env' ./  ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:/var/www/html/portfolio/
+          rsync -avz --delete \
+            --exclude='.env' \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.gitignore' \
+            --exclude='.gitattributes' \
+            --exclude='.vscode' \
+            --exclude='node_modules' \
+            --exclude='scss' \
+            --exclude='src' \
+            --exclude='package-lock.json' \
+            --exclude='package.json' \
+            --exclude='composer.lock' \
+            --exclude='jsconfig.json' \
+            --exclude='netlify.toml' \
+            ./  ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:/var/www/html/portfolio/
 
       - name: Run post-deployment commands
         run: |
