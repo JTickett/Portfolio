@@ -51,9 +51,7 @@ jobs:
             --exclude='.gitignore' \
             --exclude='.gitattributes' \
             --exclude='.vscode' \
-            --exclude='node_modules' \
             --exclude='scss' \
-            --exclude='src' \
             --exclude='package-lock.json' \
             --exclude='package.json' \
             --exclude='composer.lock' \
