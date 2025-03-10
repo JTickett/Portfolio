@@ -8,15 +8,16 @@
  * @author   James Tickett
  */
 
- const PHONE_REGEX = '/^[0-9]{10,15}$/';
- const EMAIL_REGEX = '/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
+const PHONE_REGEX = '/^[0-9]{10,15}$/';
+const EMAIL_REGEX = '/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
 
-class Contact {
+class Contact
+{
 
     // This is a static variable that holds the status messages.
     private static $statusMessages = [
         // Generic status messages
-        "success" => "Your message has been sent!", 
+        "success" => "Your message has been sent!",
         "error" => "There was an error sending your message.", // I may use this for DB error messages or other Exceptions
         "fast" => "Please wait until submitting the form again.", // This is used to prevent spamming the form, but unknown trigger specific error
 
@@ -36,7 +37,7 @@ class Contact {
 
     public $firstname;
     public $lastname;
-    
+
     public $email;
     public $phone;
     public $subject;
@@ -45,7 +46,8 @@ class Contact {
     public $responseStatuses = [];
 
     // Sanitise the data.
-    public function sanitiseFields() {
+    public function sanitiseFields()
+    {
         $this->firstname = trim($this->firstname ?? '');
         $this->lastname = trim($this->lastname ?? '');
         $this->email = trim($this->email ?? '');
@@ -54,7 +56,8 @@ class Contact {
         $this->message = trim($this->message ?? '');
     }
 
-    public function validateFields() {
+    public function validateFields()
+    {
         // This method also needs to be responsible for first checking if the required fields are filled.
         // If they are not, it should return an error message, *BUT* it should also return the fields that are *invalid* too.
 
@@ -63,7 +66,7 @@ class Contact {
         }
 
         if (empty($this->email)) {
-            $this->responseStatuses[] = self::$statusMessages["missingEmail"]; 
+            $this->responseStatuses[] = self::$statusMessages["missingEmail"];
         } else if (!$this->isEmailValid()) {
             $this->responseStatuses[] = self::$statusMessages["invalidEmail"];
         }
@@ -83,26 +86,22 @@ class Contact {
         } else if (!$this->isMessageValid()) {
             $this->responseStatuses[] = self::$statusMessages["invalidMessage"];
         }
-
     }
 
-    public function isEmailValid() {
+    public function isEmailValid()
+    {
         // This is the ideal method you would normally use, but Kayleigh needs a custom regex to deny "test@test"
         // return filter_var($this->email, FILTER_VALIDATE_EMAIL);
         return preg_match(EMAIL_REGEX, $this->email);
     }
 
-    public function isPhoneValid() {
+    public function isPhoneValid()
+    {
         return preg_match(PHONE_REGEX, $this->phone);
     }
 
-    public function isMessageValid() {
+    public function isMessageValid()
+    {
         return strlen($this->message) >= 5;
     }
-
-
 }
-
-
-
-?>
