@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php
-        $pageTitle = "James Tickett";
-        include('src/head.php');
+    $pageTitle = "James Tickett";
+    include('src/head.php');
     ?>
 </head>
+
 <body>
-    <img id="background-image" src="https://jtickett.github.io/Portfolio/img/waterposter.jpg" alt="Background Image"></img>
-    <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.jpg" playsinline></video>
+    <img id="background-image" src="/img/waterposter.jpg" alt="Background Image"></img>
+    <video id="background-video" src="/img/waterUHD.mp4" autoplay loop muted poster="/img/waterposter.jpg"></video>
 
     <div id="page-wrapper">
-        
+
         <?php
-            include('src/nav.php');
+        include('src/nav.php');
         ?>
 
         <header id="banner-section">
@@ -47,7 +49,7 @@
 
                 <div id="portfolio-spacer"></div>
 
-                
+
                 <header id="portfolio-header">
                     <h2 class="section-title">Projects</h2>
                 </header>
@@ -95,7 +97,7 @@
             </section>
 
             <?php
-                include('src/contact.php');
+            include('src/contact.php');
             ?>
         </main>
 
@@ -107,9 +109,10 @@
             </a>
         </footer>
     </div>
-            <?php
-                include('src/footer.php');
-            ?>
-    
+    <?php
+    include('src/footer.php');
+    ?>
+
 </body>
+
 </html>

@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php
-        $pageTitle = "Coding Examples";
-        include('src/head.php');
+    $pageTitle = "Coding Examples";
+    include('src/head.php');
     ?>
 </head>
+
 <body>
-    <img id="background-image" src="https://jtickett.github.io/Portfolio/img/waterposter.jpg" alt="Background Image"></img>
-    <video id="background-video" src="img/waterUHD.mp4" autoplay="true" loop="true" muted="true" poster="img\waterposter.jpg"></video>
+    <img id="background-image" src="/img/waterposter.jpg" alt="Background Image"></img>
+    <video id="background-video" src="/img/waterUHD.mp4" autoplay loop muted poster="/img/waterposter.jpg"></video>
 
     <div id="page-wrapper">
-        
-        
+
+
         <?php
-            include('src/nav.php');
+        include('src/nav.php');
         ?>
 
 
 
         <header id="banner-section">
 
-        <!-- TODO: This needs to move out of this section, but for now I'm not sure how to get rid of the visible space at the bottom of the page -->
-        <!-- Mobile Menu (with Burger) -->
-        <nav>
-            <div id="hamburger">
-                <div id="burger"></div>
-            </div>
-        </nav>
+            <!-- TODO: This needs to move out of this section, but for now I'm not sure how to get rid of the visible space at the bottom of the page -->
+            <!-- Mobile Menu (with Burger) -->
+            <nav>
+                <div id="hamburger">
+                    <div id="burger"></div>
+                </div>
+            </nav>
 
             <div id="banner-overlay">
                 <!-- <img src="img\banner1.jpg" alt="Banner Image" id="banner-image"> -->
@@ -54,7 +56,7 @@
 
                 <div id="scs-spacer"></div>
 
-                
+
                 <header id="scs-header">
                     <h2 class="section-title">Coding Examples</h2>
                 </header>
@@ -212,11 +214,12 @@ LIMIT 10 OFFSET 5;</code></pre>
                 <br>
                 Back to Top
             </a>
-            
+
         </footer>
     </div>
-            <?php
-                include('src/footer.php');
-            ?>
+    <?php
+    include('src/footer.php');
+    ?>
 </body>
+
 </html>
