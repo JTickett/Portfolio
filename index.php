@@ -57,36 +57,36 @@
                     <div class="portfolio-item">
                         <img class="portfolio-item__image" src="img\homepage.png" alt="Project Placeholder Image">
                         <h3 class="portfolio-item__title">Netmatters Homepage</h3>
-                        <a target="_blank" class="portfolio-item__link1" href="https://netmatters.james-tickett.netmatters-scs.co.uk/">View Project</a>
+                        <a target="_blank" class="portfolio-item__link1" href="https://netmatters.tickett.dev/">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="https://github.com/JTickett/Netmatters-Website">View Code</a>
                     </div>
                     <div class="portfolio-item">
                         <img class="portfolio-item__image" src="img\portfolio3.jpg" alt="Project Placeholder Image">
                         <h3 class="portfolio-item__title">Portfolio Website</h3>
-                        <a target="_blank" class="portfolio-item__link1" href="https://james-tickett.netmatters-scs.co.uk/">View Project</a>
+                        <a target="_blank" class="portfolio-item__link1" href="https://portfolio.tickett.dev/">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="https://github.com/JTickett/Portfolio-Website">View Code</a>
                     </div>
                     <div class="portfolio-item">
                         <img class="portfolio-item__image" src="img\jsarray2.png" alt="Project Placeholder Image">
                         <h3 class="portfolio-item__title">Javascript Array</h3>
-                        <a target="_blank" class="portfolio-item__link1" href="https://js-array.james-tickett.netmatters-scs.co.uk/">View Project</a>
+                        <a target="_blank" class="portfolio-item__link1" href="https://jsarray.tickett.dev/">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="https://github.com/JTickett/jsarray">View Code</a>
                     </div>
                     <div class="portfolio-item">
                         <img class="portfolio-item__image" src="img\homepage.png" alt="Project Placeholder Image">
-                        <h3 class="portfolio-item__title">Project Title</h3>
+                        <h3 class="portfolio-item__title">Placeholder Project 1</h3>
                         <a target="_blank" class="portfolio-item__link1" href="">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="">View Code</a>
                     </div>
                     <div class="portfolio-item">
                         <img class="portfolio-item__image" src="img\homepage.png" alt="Project Placeholder Image">
-                        <h3 class="portfolio-item__title">Project Title</h3>
+                        <h3 class="portfolio-item__title">Placeholder Project 2</h3>
                         <a target="_blank" class="portfolio-item__link1" href="">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="">View Code</a>
                     </div>
                     <div class="portfolio-item">
                         <img class="portfolio-item__image" src="img\homepage.png" alt="Project Placeholder Image">
-                        <h3 class="portfolio-item__title">Project Title</h3>
+                        <h3 class="portfolio-item__title">Placeholder Project 3</h3>
                         <a target="_blank" class="portfolio-item__link1" href="">View Project</a>
                         <a target="_blank" class="portfolio-item__link2" href="">View Code</a>
                     </div>
